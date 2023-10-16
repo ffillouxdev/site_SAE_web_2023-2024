@@ -5,12 +5,14 @@
     box-sizing: border-box;
 }
 
-
 /*NAVIGATION BAR*/
 nav {
     background-color: #f0f0f0;
-    height: 80px;
+    height: 60px;
     width: 100%;
+    top: 0;
+    transition: top 1s;
+    position: fixed;
 }
 
 .top-nav {
@@ -40,6 +42,7 @@ nav {
     height: 20px;
     background-color: #f0f0f0;
     padding: 10px;
+    padding-bottom: 15px;
 }
 
 .nav-center-bottom li {
@@ -78,7 +81,7 @@ nav {
     position: absolute;
     width: 172px;
     height: 280px;
-    top: 20px; 
+    top: 22px; 
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
@@ -87,6 +90,7 @@ nav {
     z-index: 1; 
     background: #FC5252;
     background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
+    transition: 0.3s ease-in-out;
 }
 
 .nav-center-bottom li:hover .dropdown.services {
@@ -104,13 +108,11 @@ nav {
     font-weight: normal;
 }
 
-
-
 .dropdown.offres {
     position: absolute;
     width: 172px;
     height: 280px;
-    top: 20px; 
+    top: 22px; 
     opacity: 0;
     visibility: hidden;
     padding: 10px;
@@ -118,6 +120,7 @@ nav {
     z-index: 1; 
     background: #FC5252;
     background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
+    transition: 0.3s ease-in-out;
 
 }
 
@@ -146,13 +149,112 @@ nav {
 
 
 /* Additional Navigation Bar */
-.add-nav {
+.ads-nav {
     background-color: #FC5252;
     height: 50px;
     text-align: center;
 }
 
-.add-nav p {
+.ads-nav p {
     color: white;
     padding-top: 1.2%;
+}
+
+/*MAIN SECTION*/
+
+main #bg2 {
+    background-color: #D9D9D9;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main .flex-container img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/*Etudiant section*/
+.etudiant-section {
+   background: url(./assets/bgetudiant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.etudiant-section .nos-offres {
+    background-color: #D9D9D9;
+    
+}
+
+.etudiant-section .nos-offres p{
+    color: #D9D9D9;
+}
+
+/*Contact section*/
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 100%;
+}
+
+.choose-transport {
+    width: 100%;
+    height: 100%;
+}
+.choose-transport h2 {
+    text-align: center;
+}
+
+.img-contact-section {
+    width: 60%;
+}
+
+.img-contact-section img {
+    width: 300px;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.nous-contacter {
+    width:  40%;
+    margin-top: 10%;
+}
+
+.nous-contacter p {
+    margin-right: 20%;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #D9D9D9;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    
+}
+
+footer section{
+    margin : 100px 0 5px 30px;
+    width: 50%;
+}
+
+footer #footer-logo{
+    margin-left: 30%;
+    margin-top: 10%;
 }
