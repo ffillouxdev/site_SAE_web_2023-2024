@@ -1,401 +1,410 @@
-    *{
-        top: 0;
-        margin: 0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        box-sizing: border-box;
-        resize: none;   
-    }
+*{
+    top: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    resize: none;   
+}
 
-    /*NAVIGATION BAR*/
-    nav {
-        background-color: #f0f0f0;
-        height: 60px;
-        width: 100%;
-        top: 0;
-        transition: top 1s;
-        position: fixed;
-    }
+/*NAVIGATION BAR*/
+nav {
+    background-color: #f0f0f0;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    transition: top 1s;
+    position: fixed;
+}
 
-    .top-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-    }
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
 
-    .top-nav h1{
-        font-weight: bold;
-    }
-
-
-    .top-nav p {
-        text-align: center;
-        font-style: italic;
-        font-size: 12px;
-        margin-right: 20px;
-        margin-top: 10px;
-    }
-
-    .nav-center-bottom {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20px;
-        background-color: #f0f0f0;
-        padding: 10px;
-        padding-bottom: 15px;
-    }
-
-    .nav-center-bottom li {
-        display: inline-block;
-        margin-right: 20px;
-        font-weight: bold;
-        position: relative; 
-    }
-
-    .nav-center-bottom li a {
-        text-decoration: none;
-        color: black;
-        position: relative;
-    }
-
-    .nav-center-bottom li a::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #FC5252;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: transform 0.4s ease-in-out;
-    }
-
-    .nav-center-bottom li a:hover::before {
-        visibility: visible;
-        transform: scaleX(1);
-    }
+.top-nav h1{
+    font-weight: bold;
+}
 
 
-    .dropdown.services {
-        position: absolute;
-        width: 172px;
-        height: 280px;
-        top: 22px; 
-        opacity: 0;
-        visibility: hidden;
-        background-color: #fff;
-        padding: 10px;
-        border: 1px solid #ccc;
-        z-index: 1; 
-        background: #FC5252;
-        background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
-        transition: 0.3s ease-in-out;
-    }
+.top-nav p {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
 
-    .nav-center-bottom li:hover .dropdown.services {
-        opacity: 1;
-        visibility: visible;
-    }
+.nav-center-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    padding-bottom: 15px;
+}
 
-    .dropdown.services li {
-        display: block;
-        margin-top: 10px;
-    }
+.nav-center-bottom li {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+    position: relative; 
+}
 
-    .dropdown.services li a {
-        color: black;
-        font-weight: normal;
-    }
+.nav-center-bottom li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
 
-    .dropdown.offres {
-        position: absolute;
-        width: 172px;
-        height: 280px;
-        top: 22px; 
-        opacity: 0;
-        visibility: hidden;
-        padding: 10px;
-        border: 1px solid #ccc;
-        z-index: 1; 
-        background: #FC5252;
-        background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
-        transition: 0.3s ease-in-out;
+.nav-center-bottom li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FC5252;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
 
-    }
-
-    .nav-center-bottom li:hover .dropdown.offres {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .dropdown.offres li {
-        display: block;
-        margin-top: 10px;
-    }
-
-    .dropdown.offres li a {
-        color: black;
-        font-weight: normal;
-        
-    }
-
-    .nav-center-bottom .dropdown.offres li a::before, .nav-center-bottom .dropdown.services li a::before {
-        transition: none; 
-        text-decoration: none;
-    }
+.nav-center-bottom li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
 
 
+.dropdown.services {
+    position: absolute;
+    width: 172px;
+    height: 280px;
+    top: 22px; 
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1; 
+    background: #FC5252;
+    background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
+    transition: 0.3s ease-in-out;
+}
 
+.nav-center-bottom li:hover .dropdown.services {
+    opacity: 1;
+    visibility: visible;
+}
 
-    /* Additional Navigation Bar */
-    .ads-nav {
-        background-color: #FC5252;
-        height: 50px;
-        text-align: center;
-    }
+.dropdown.services li {
+    display: block;
+    margin-top: 10px;
+}
 
-    .ads-nav p {
-        color: white;
-        padding-top: 1.2%;
-    }
+.dropdown.services li a {
+    color: black;
+    font-weight: normal;
+}
 
-    /*MAIN SECTION*/
+.dropdown.services li a::after {
+    content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
+    margin-left: 5px;
+}
 
-    main #bg2 {
-        background-color: #D9D9D9;
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.dropdown.offres {
+    position: absolute;
+    width: 200px;
+    height: 280px;
+    top: 22px; 
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1; 
+    background: #FC5252;
+    background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
+    transition: 0.3s ease-in-out;
+}
 
-    main .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-top: 50px;
-        width: 70%;
-        margin: 0 auto;
-        margin-bottom: 5%;
-    }
+.nav-center-bottom li:hover .dropdown.offres {
+    opacity: 1;
+    visibility: visible;
+}
 
-    main .flex-container .velo img {
-        width: 150px;
-        height: 120px;
-        margin: 10px;
-    }
+.dropdown.offres li {
+    display: block;
+    margin-top: 10px;
+}
 
-    main .flex-container .velo img:hover {
-        width: 150px;
-        height: 120px;
-        margin: 10px;
-        transform: scale(1.1);
-        transition: 0.5s;
-    }
-
-    main .flex-container .trottinette img {
-        width: 120px;
-        height: 120px;
-        margin: 10px;
-    }
-
-    main .flex-container .trottinette img:hover {
-        width: 120px;
-        height: 120px;
-        margin: 10px;
-        transform: scale(1.1);
-        transition: 0.5s;
-    }
-
-    /*Propositions section*/
-    .choose-transport h2 {
-        text-align: center;
-        margin-top: 5%;
-    }
-
-    .choose-transport hr {
-        width: 25%;
-        margin-left: 38%;
-        margin-top: 1.5%;
-        margin-bottom: 5%;
-        border-style: solid none;
-        border-color: #FC5252;
-        border-width: 4px;
-        height: 6px;
-    }
-
-    /*Etudiant section*/
-    .etudiant-section {
-    background: url(./assets/bgetudiant.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        align-items:first baseline;  
-    }
-
-    .etudiant-section .nos-offres {
-        background-color: #D9D9D9;
-        height: 300px;
-        width: 200px;
-        border-radius: 15px;
-        margin-left: 5%;
-        margin-top: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; 
-        align-items: center; 
-        padding: 20px; 
-        box-shadow: 0 2px 4px #00000027; 
-    }
+.dropdown.offres li a {
+    color: black;
+    font-weight: normal;
     
-    .etudiant-section .nos-offres p{
-        color: #000;
-        font-weight: bold;
-        font-size: 22px;
-        text-align: center;
-        margin-top: 10px;
-    }
-    
-    .etudiant-section .nos-offres button {
-        background-color: #FC5252;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-        font-size: 15px;
-        padding: 10px 20px; 
-        width: 80%;
-        cursor: pointer;
-        transition: background-color 0.3s ease; 
-    }
-    
-    .etudiant-section .nos-offres button:hover {
-        background-color: #000;
-        font-size: 14px;
-    }
+}
 
-    /*Contact section*/
-    .contact-section {
-        display: flex;
-        justify-content: space-evenly;
-        height: 520px;
-        width: 100%;
-        margin-bottom: 2%;
-    }
+.dropdown.offres li a::after {
+    content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
+    margin-left: 5px;
+}
 
-    .choose-transport {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-contact-section {
-        width: 60%;
-    }
-
-    .img-contact-section img {
-        width: 350px;
-        margin-top: 10%;
-        margin-left: 40%;
-    }
-
-    .nous-contacter {
-        width:  40%;
-        margin-top: 10%;
-    }
-
-    .nous-contacter h3 {
-        margin-bottom: 0.5%;
-        margin-left: 10%;
-    }
-
-    .nous-contacter hr {
-        width: 18%;
-        margin-left: 15%;
-        margin-bottom: 5%;
-        border-style: solid none;
-        border-color: #FC5252;
-        border-width: 4px;
-        height: 6px;
-    }
-
-    .nous-contacter p {
-        margin-right: 20%;
-        margin-top: 20px;
-        font-size: 15px;
-        width: 60%;
-    }
-
-    /*FOOTER*/
-    footer {
-        background-color: #ccc; 
-        border-top: 2px solid #000;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 300px;
-        color: #000;
-        padding: 20px;
-        position: relative;
-    }
+.nav-center-bottom .dropdown.offres li a::before, .nav-center-bottom .dropdown.services li a::before {
+    transition: none; 
+    text-decoration: none;
+}
 
 
-    footer ul li {
-        margin: 2px 0;
-    }
 
-    footer ul li a {
-        text-decoration: none;
-        color: #000;
-    }
 
-    footer ul li a:hover {
-        text-decoration: underline;
-        color: #fff;
-    }
+/* Additional Navigation Bar */
+.ads-nav {
+    background-color: #FC5252;
+    height: 50px;
+    text-align: center;
+}
 
-    .flex-container-footer {
-        display: flex;
-        position: relative;   
-        padding-top: 20px;
-    }
+.ads-nav p {
+    color: white;
+    padding-top: 1.2%;
+}
 
-    .product-hunt {
-        background-color: #fff;
-        width: 20%;
-        height: 80px;
-        margin: 0 auto;
-        margin-top: -60px;
-        border: 2px solid #000;
-    }
+/*MAIN SECTION*/
 
-    .product-hunt h3 {
-        font-size: 20px;
-        text-align: center;
-        color: #000;
-    }
+main #bg2 {
+    background-color: #D9D9D9;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .stars {
-        margin-top: -6px;
-        font-size: 34px;
-        color: #FFD700; 
-        text-align: center;
-    }
+main .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
 
-    .product-hunt p {
-        font-size: 12px;
-        text-align: center;
-        color: #444;
-        margin-top: -22px;
-    }
+main .flex-container .velo img {
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+}
 
-    #footer-logo {
-        max-width: 100px;
-        display: block;
-        margin: 0 auto;
-    }
+main .flex-container .velo img:hover {
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+main .flex-container .trottinette img {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+main .flex-container .trottinette img:hover {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/*Propositions section*/
+.choose-transport h2 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.choose-transport hr {
+    width: 25%;
+    margin-left: 38%;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    border-style: solid none;
+    border-color: #FC5252;
+    border-width: 4px;
+    height: 6px;
+}
+
+/*Etudiant section*/
+.etudiant-section {
+background: url(./assets/bgetudiant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items:first baseline;  
+}
+
+.etudiant-section .nos-offres {
+    background-color: #D9D9D9;
+    height: 275px;
+    width: 200px;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    box-shadow: 0 2px 4px #00000027; 
+}
+
+.etudiant-section .nos-offres p{
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.etudiant-section .nos-offres button {
+    background-color: #FC5252;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px; 
+    width: 80%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.etudiant-section .nos-offres button:hover {
+    background-color: #000;
+    font-size: 14px;
+}
+
+/*Contact section*/
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 520px;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.choose-transport {
+    width: 100%;
+    height: 100%;
+}
+
+.img-contact-section {
+    width: 60%;
+}
+
+.img-contact-section img {
+    width: 350px;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+.nous-contacter {
+    width:  40%;
+    margin-top: 10%;
+}
+
+.nous-contacter h3 {
+    margin-bottom: 0.5%;
+    margin-left: 10%;
+}
+
+.nous-contacter hr {
+    width: 18%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    border-style: solid none;
+    border-color: #FC5252;
+    border-width: 4px;
+    height: 6px;
+}
+
+.nous-contacter p {
+    margin-right: 20%;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 60%;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #ccc; 
+    border-top: 2px solid #000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    color: #000;
+    padding: 20px;
+    position: relative;
+}
+
+
+footer ul li {
+    margin: 2px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.flex-container-footer {
+    display: flex;
+    position: relative;   
+    padding-top: 20px;
+}
+
+.product-hunt {
+    background-color: #fff;
+    width: 20%;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: -60px;
+    border: 2px solid #000;
+}
+
+.product-hunt h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.stars {
+    margin-top: -6px;
+    font-size: 34px;
+    color: #FFD700; 
+    text-align: center;
+}
+
+.product-hunt p {
+    font-size: 12px;
+    text-align: center;
+    color: #444;
+    margin-top: -22px;
+}
+
+#footer-logo {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
 
