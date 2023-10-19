@@ -29,4 +29,4 @@ parlez des greves dans nosservices.html
 
 Rajoutez une possibilité de fermer l'annonce étudiante
 gif centrale
-segway img 
+segway img  
