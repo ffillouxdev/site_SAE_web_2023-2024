@@ -77,6 +77,13 @@ nav {
     transform: scaleX(1);
 }
 
+.dropdown hr {
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: 1px;
+    border-color: #000;
+    width: 95%;
+}
 
 .dropdown.services {
     position: absolute;
@@ -89,8 +96,6 @@ nav {
     padding: 10px;
     border: 1px solid #ccc;
     z-index: 1; 
-    background: #FC5252;
-    background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
     transition: 0.3s ease-in-out;
 }
 
@@ -124,8 +129,7 @@ nav {
     padding: 10px;
     border: 1px solid #ccc;
     z-index: 1; 
-    background: #FC5252;
-    background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
+    background: #fff; 
     transition: 0.3s ease-in-out;
 }
 
@@ -191,15 +195,17 @@ main .flex-container {
     margin-bottom: 5%;
 }
 
+
+
 main .flex-container .velo img {
-    width: 150px;
-    height: 120px;
+    width: 155px;
+    height: 115px;
     margin: 10px;
 }
 
 main .flex-container .velo img:hover {
-    width: 150px;
-    height: 120px;
+    width: 155px;
+    height: 115px;
     margin: 10px;
     transform: scale(1.1);
     transition: 0.5s;
