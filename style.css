@@ -1,9 +1,9 @@
-*{
+* {
     top: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
-    resize: none;   
+    resize: none;
 }
 
 /*NAVIGATION BAR*/
@@ -16,6 +16,8 @@ nav {
     position: fixed;
 }
 
+
+
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -23,7 +25,7 @@ nav {
     height: 100%;
 }
 
-.top-nav h1{
+.top-nav h1 {
     font-weight: bold;
 }
 
@@ -50,7 +52,7 @@ nav {
     display: inline-block;
     margin-right: 20px;
     font-weight: bold;
-    position: relative; 
+    position: relative;
 }
 
 .nav-center-bottom li a {
@@ -82,13 +84,13 @@ nav {
     position: absolute;
     width: 172px;
     height: 280px;
-    top: 22px; 
+    top: 22px;
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
-    z-index: 1; 
+    z-index: 1;
     background: #FC5252;
     background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
     transition: 0.3s ease-in-out;
@@ -110,7 +112,8 @@ nav {
 }
 
 .dropdown.services li a::after {
-    content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
+    content: url(./assets/rightArrow.png);
+    /*Pour le moment, on utilise une fleche*/
     margin-left: 5px;
 }
 
@@ -118,12 +121,12 @@ nav {
     position: absolute;
     width: 200px;
     height: 280px;
-    top: 22px; 
+    top: 22px;
     opacity: 0;
     visibility: hidden;
     padding: 10px;
     border: 1px solid #ccc;
-    z-index: 1; 
+    z-index: 1;
     background: #FC5252;
     background: linear-gradient(to top, #FC5252 0%, #FFFFFF 29%);
     transition: 0.3s ease-in-out;
@@ -142,16 +145,18 @@ nav {
 .dropdown.offres li a {
     color: black;
     font-weight: normal;
-    
+
 }
 
 .dropdown.offres li a::after {
-    content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
+    content: url(./assets/rightArrow.png);
+    /*Pour le moment, on utilise une fleche*/
     margin-left: 5px;
 }
 
-.nav-center-bottom .dropdown.offres li a::before, .nav-center-bottom .dropdown.services li a::before {
-    transition: none; 
+.nav-center-bottom .dropdown.offres li a::before,
+.nav-center-bottom .dropdown.services li a::before {
+    transition: none;
     text-decoration: none;
 }
 
@@ -238,14 +243,14 @@ main .flex-container .trottinette img:hover {
 
 /*Etudiant section*/
 .etudiant-section {
-background: url(./assets/bgetudiant.png);
+    background: url(./assets/bgetudiant.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items:first baseline;  
+    justify-content: center;
+    align-items: first baseline;
 }
 
 .etudiant-section .nos-offres {
@@ -257,13 +262,13 @@ background: url(./assets/bgetudiant.png);
     margin-top: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 20px; 
-    box-shadow: 0 2px 4px #00000027; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px #00000027;
 }
 
-.etudiant-section .nos-offres p{
+.etudiant-section .nos-offres p {
     color: #000;
     font-weight: bold;
     font-size: 22px;
@@ -277,10 +282,10 @@ background: url(./assets/bgetudiant.png);
     border-radius: 5px;
     color: #fff;
     font-size: 15px;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     width: 80%;
     cursor: pointer;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .etudiant-section .nos-offres button:hover {
@@ -313,7 +318,7 @@ background: url(./assets/bgetudiant.png);
 }
 
 .nous-contacter {
-    width:  40%;
+    width: 40%;
     margin-top: 10%;
 }
 
@@ -341,7 +346,7 @@ background: url(./assets/bgetudiant.png);
 
 /*FOOTER*/
 footer {
-    background-color: #ccc; 
+    background-color: #ccc;
     border-top: 2px solid #000;
     bottom: 0;
     left: 0;
@@ -369,7 +374,7 @@ footer ul li a:hover {
 
 .flex-container-footer {
     display: flex;
-    position: relative;   
+    position: relative;
     padding-top: 20px;
 }
 
@@ -391,7 +396,7 @@ footer ul li a:hover {
 .stars {
     margin-top: -6px;
     font-size: 34px;
-    color: #FFD700; 
+    color: #FFD700;
     text-align: center;
 }
 
@@ -407,4 +412,3 @@ footer ul li a:hover {
     display: block;
     margin: 0 auto;
 }
-
