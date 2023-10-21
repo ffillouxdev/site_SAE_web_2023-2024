@@ -14,6 +14,7 @@ nav {
     top: 0;
     transition: top 1s;
     position: fixed;
+    z-index: 1;
 }
 
 .top-nav {
@@ -159,9 +160,6 @@ nav {
     text-decoration: none;
 }
 
-
-
-
 /* Additional Navigation Bar */
 .ads-nav {
     background-color: #FC5252;
@@ -174,34 +172,104 @@ nav {
 .ads-nav p {
     color: white;
     padding-top: 1.2%;
+    width: 100%;
+}
+
+.ads-nav a {
+    text-decoration: none;
+    color: white;
+    padding-top: 1.2%;
+    width: 99%;
+}
+
+.ads-nav a:hover {
+    text-decoration: underline;
+    color: white;
+    padding-top: 1.2%;
     width: 99%;
 }
 
 
-.ads-nav .closeAds button {
-    border: none;
-    color: white;
-    font-size: 20px;
-    padding: 0 10px;
+.ads-nav i {
+    font-size: 25px;
+    color: #fff;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+.ads-nav i:hover {
+    color: #000;
     cursor: pointer;
 }
 
-.ads-nav.img {
-    width: 20px;
-    height: 20px;
-    margin-top: 15px;
-    margin-right: 10px;
+/* Styles par défaut pour le bouton */
+.toggle-ads-nav {
+    display: none;
+    background-color: #FC5252;
+    border : none;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    margin-top: 12px;
 }
+
+
+/* Styles pour la div .ads-nav quand le bouton est coché */
+.toggle-ads-nav:checked + .ads-nav {
+    display: none;
+}
+
+
+
+
+
 
 /*MAIN SECTION*/
 
-main #bg2 {
-    background-color: #D9D9D9;
+main .bg2 {
     height: 100vh;
-    width: 100%;
+    min-width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;    
+    z-index: -1;
+}
+
+
+.video-overlay-text {
+    position: absolute;
+    top: 80%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+    text-shadow: 2px 2px 4px #000; 
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.video-overlay-text h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.video-overlay-text p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 0;
+    margin-left: 2%;
+}
+
+.video-overlay-text:hover {
+    color: #FC5252;
+    cursor: pointer;
 }
 
 main .flex-container {
@@ -240,6 +308,17 @@ main .flex-container .trottinette img:hover {
     width: 120px;
     height: 120px;
     margin: 10px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+main .flex-container .segway img {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+} 
+
+main .flex-container .segway img:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -363,6 +442,18 @@ background: url(./assets/bgetudiant.png);
     font-size: 15px;
     width: 60%;
 }
+
+.nous-contacter a {
+    text-decoration: none;
+    color: #FC5252;
+    font-style: italic;
+}
+
+.nous-contacter a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
 
 /*FOOTER*/
 footer {

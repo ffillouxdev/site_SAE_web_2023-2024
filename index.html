@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>DouceMob'</title>
     </head>
     <body>
@@ -37,13 +38,19 @@
                     <li class="Contact" ><a href="">Contact</a></li>
                 </ul>
             </div>
+            <input type="checkbox" id="toggle-ads-nav" class="toggle-ads-nav">
             <div class="ads-nav">
-                <p>Étudiant ? Profitez de super avantages pour vos trajets !</p>
+                <p><a href="">Étudiant ?</a> Profitez de super avantages pour vos trajets !</p>
+                <label for="toggle-ads-nav" class="ads-nav-button"><i class='bx bx-x'></i></label>
             </div>
         </nav>
         <main>
-            <img id="bg2" src="./assets/bg2.gif" alt="gif background">
-           <div class="choose-transport">
+            <section class="video-overlay-text">
+                <h2>Bienvenue sur DouceMob'</h2>
+                <p>Le site des transports doux</p> 
+            </section>
+            <video src="./assets/bg2.mp4" class="bg2" alt="video de transport" loop autoplay muted></video>
+            <div class="choose-transport">
             <h2>Nos propositions (offres) de transport</h2>
             <hr>
             <div class="flex-container">
@@ -53,13 +60,9 @@
                 <div class="trottinette">
                     <img src="./assets/tiers.png" alt="trottinette">
                 </div>
-<<<<<<< HEAD
-                <div class="marche">
-                    <img src="./assets/segway.png" alt="Segway">
-=======
                 <div class="segway">
-                    <img src="./assets/segway.png" alt="segway">
->>>>>>> ed3df605d106698a023226ea33a908632d886575
+                    <img src="./assets/segway.png" alt="Segway">
+
                 </div>
             </div>
            </div>
@@ -79,7 +82,7 @@
                 <div class="nous-contacter">
                     <h3>Nous Contactez</h3>
                     <hr>
-                    <p>Pour toute question ou demande de renseignements supplémentaires, n'hésitez pas à nous contacter par e-mail.</p>
+                    <p>Pour toute question ou demande de renseignements supplémentaires, n'hésitez pas à <a href="">nous contacter</a> par e-mail.</p>
                 </div>
            </div>
         </main>
