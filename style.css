@@ -33,7 +33,7 @@ nav {
 
 .top-nav h1{
     font-weight: bold;
-    margin-left: 11%;
+    margin-left: 7%;
 }
 
 
@@ -86,6 +86,15 @@ nav {
     transform: scaleX(1);
 }
 
+.divider {
+    height: 2px; 
+    background-color: #000; 
+    margin-bottom: 0;
+    margin-top: 10px;
+    width: 95%;
+}
+
+/*
 .dropdown.services {
     position: absolute;
     width: 172px;
@@ -100,13 +109,6 @@ nav {
     transition: 0.3s ease-in-out;
 }
 
-.divider {
-    height: 2px; 
-    background-color: #000; 
-    margin-bottom: 0;
-    margin-top: 10px;
-    width: 95%;
-}
 
 .nav-center-bottom li:hover .dropdown.services {
     opacity: 1;
@@ -124,9 +126,9 @@ nav {
 }
 
 .dropdown.services li a::after {
-    content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
+    content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une flech
     margin-left: 5px;
-}
+}e*/
 
 .dropdown.offres {
     position: absolute;
