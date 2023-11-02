@@ -33,7 +33,7 @@ nav {
 
 .top-nav h1{
     font-weight: bold;
-    margin-left: 7%;
+    margin-left: 7%; /* ou 11%*/
 }
 
 
@@ -157,8 +157,12 @@ nav {
 .dropdown.offres li a {
     color: black;
     font-weight: normal;
-    
 }
+
+.dropdown.offres li h3 {
+    text-align: center;
+}
+
 
 .dropdown.offres li a::after {
     content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
