@@ -1,4 +1,5 @@
-@media screen and (min-width: 500px) and (min-height: 790px) {
+/* Format ordinateur */
+@media (min-width: 500px) {
     *{
     top: 0;
     margin: 0;
@@ -228,8 +229,8 @@
     .video-overlay-text {
         position: absolute;
         top: 80%; 
-        left: 25%; 
-        transform: translate(-50%, -50%); 
+        left: 50%; 
+        transform: translateX(-50%); 
         text-shadow: 2px 2px 4px #000; 
         animation: fadeIn 1.5s ease-in-out;
     }
@@ -527,6 +528,9 @@
 
 
 
+
+
+/*Format mobile*/
 @media(max-width: 490px){ 
     *{
         top: 0;
@@ -831,13 +835,12 @@
     
     .img-contact-section {
         width: 100%;
-        display: flex;
-        justify-content: center;
     }
 
     .img-contact-section img {
         width: 250px;
         height: 250px;
+        margin-right: 40%;
         margin-top: 10%;
         margin-bottom: 10%;
     }
@@ -952,11 +955,151 @@
     }
     
     #footer-logo {
-        max-width: 150px;
-        height: 150px; 
-        display: block;
+       display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-section {
+        height: 90vh;
+        width: 100vw;
+        margin-bottom: 2%;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img-contact-section {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+
+    .img-contact-section img {
+        width: 350px;
+        height: 350px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .nous-contacter {
+        width:  100%;
+        margin-top: 10%;
+    }
+
+    .nous-contacter h3 {
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    .nous-contacter hr {
+        width: 18%;
+        margin-left: 41%;
+        border-style: solid none;
+        border-color: #FC5252;
+        border-width: 4px;
+        height: 6px;
+    }
+
+    .nous-contacter p {
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nous-contacter a {
+        text-decoration: none;
+        color: #FC5252;
+        font-style: italic;
+    }
+
+    .nous-contacter a:hover {
+        text-decoration: underline;
+        color: #000;
+    }
+
+    /*FOOTER*/
+    footer {
+        background-color: #ccc; 
+        border-top: 2px solid #000;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 300px;
+        color: #000;
+        padding: 20px;
+        position: relative;
+    }
+
+
+    footer ul li {
+        margin: 2px 0;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    footer ul li a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    .flex-container-footer {
+        display: flex;
+        position: relative;   
+        padding-top: 20px;
+    }
+
+    .flex-container-footer h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product-hunt {
+        background-color: #fff;
+        width: 35%;
+        height: 46%;
         margin: 0 auto;
-        margin-left: 50%;
-        margin-top: -2%;
+        margin-top: -60px;
+        border: 2px solid #000;
+    }
+
+    .product-hunt h3 {
+        font-size: 20px;
+        text-align: center;
+        color: #000;
+    }
+
+    .stars {
+        margin-top: -6px;
+        font-size: 34px;
+        color: #FFD700; 
+        text-align: center;
+    }
+
+    .product-hunt p {
+        font-size: 12px;
+        text-align: center;
+        color: #444;
+        margin-top: -22px;
+    }
+
+    #footer-logo {
+        display: none;
+    }
+    
+}
+
+@media (max-width : 390px){
+    .product-hunt {
+        background-color: #fff;
+        width: 50%;
+        height: 46%;
+        margin: 0 auto;
+        margin-top: -60px;
+        border: 2px solid #000;
     }
 }
