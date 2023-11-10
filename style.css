@@ -1,516 +1,962 @@
-*{
+@media screen and (min-width: 500px) and (min-height: 790px) {
+    *{
     top: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
     resize: none;   
-}
+    }
 
-/*header BAR*/
-header {
-    background-color: #f0f0f0;
-    height: 60px;
-    width: 100%;
-    top: 0;
-    transition: top 1s;
-    position: relative;
-    z-index: 1;
-}
+    body {
+        font-family: Arial, sans-serif;
+        width: 100vw;
+        max-width: 100vw;
+    }
 
-.top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.top-header a {
-    margin-top: 2%;
-    margin-left: 1%;
-    width: 70px;
-    height: 40px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.top-header #logoRect{
-    width: 70px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.top-header h1{
-    font-weight: bold;
-    margin-left: 10%;
-}
+    /*header BAR*/
+    nav {
+        background-color: #f0f0f0;
+        width: 100%;
+        top: 0;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .navbar-mobile{
+        display: none;
+    }
 
 
-.top-header p {
-    text-align: center;
-    font-style: italic;
-    font-size: 12px;
-    margin-right: 20px;
-    margin-top: 10px;
-}
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
 
-.header-center-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    padding-bottom: 15px;
-}
+    .top-header a {
+        margin-top: 2%;
+        margin-left: 1%;
+        width: 70px;
+        height: 40px;
+        cursor: pointer;
+        text-decoration: none;
+    }
 
-.header-center-bottom li {
-    display: inline-block;
-    margin-right: 20px;
-    font-weight: bold;
-    position: relative; 
-}
+    .top-header #logoRect{
+        width: 70px;
+        height: 40px;
+        cursor: pointer;
+    }
 
-.header-center-bottom li a {
-    text-decoration: none;
-    color: black;
-    position: relative;
-}
-
-.header-center-bottom li a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #FC5252;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: transform 0.4s ease-in-out;
-}
-
-.header-center-bottom li a:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-}
-
-.divider {
-    height: 2px; 
-    background-color: #000; 
-    margin-bottom: 0;
-    margin-top: 10px;
-    width: 95%;
-}
-
-.dropdown.offres {
-    position: absolute;
-    width: 200px;
-    height: 280px;
-    top: 22px; 
-    opacity: 0;
-    visibility: hidden;
-    padding: 10px;
-    border: 1px solid #ccc;
-    z-index: 1; 
-    background: #fff; 
-    transition: 0.3s ease-in-out;
-}
-
-.header-center-bottom li:hover .dropdown.offres {
-    opacity: 1;
-    visibility: visible;
-}
-
-.dropdown.offres li {
-    display: block;
-    margin-top: 10px;
-}
-
-.dropdown.offres li a {
-    color: black;
-    font-weight: normal;
-}
-
-.dropdown.offres li h3 {
-    text-align: center;
-}
+    .top-header h1{
+        font-weight: bold;
+        margin-left: 10%;
+    }
 
 
-.dropdown.offres li a::after {
-    content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
-    margin-left: 5px;
-}
+    .top-header p {
+        text-align: center;
+        font-style: italic;
+        font-size: 12px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
 
-.header-center-bottom .dropdown.offres li a::before, .header-center-bottom .dropdown.services li a::before {
-    transition: none; 
-    text-decoration: none;
-}
+    .header-center-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        background-color: #f0f0f0;
+        padding: 10px;
+        padding-bottom: 15px;
+    }
 
-/* Additional header Bar */
-.ads-header {
-    background-color: #FC5252;
-    height: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
+    .header-center-bottom li {
+        display: inline-block;
+        margin-right: 20px;
+        font-weight: bold;
+        position: relative; 
+    }
 
-.ads-header p {
-    color: white;
-    padding-top: 1.2%;
-    width: 100%;
-    margin-left: 5%; 
-}
+    .header-center-bottom li a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+    }
 
-.ads-header a {
-    text-decoration: none;
-    color: white;
-    padding-top: 1.2%;
-    width: 99%;
-}
+    .header-center-bottom li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #FC5252;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: transform 0.4s ease-in-out;
+    }
 
-.ads-header a:hover {
-    text-decoration: underline;
-    color: white;
-    padding-top: 1.2%;
-    width: 99%;
-}
+    .header-center-bottom li a:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
 
+    .divider {
+        height: 2px; 
+        background-color: #000; 
+        margin-bottom: 0;
+        margin-top: 10px;
+        width: 95%;
+    }
 
-.ads-header i {
-    font-size: 25px;
-    color: #fff;
-    margin-top: 12px;
-    margin-right: 15px;
-}
-
-.ads-header i:hover {
-    color: #000;
-    cursor: pointer;
-}
-
-/* Styles par défaut pour le bouton */
-.toggle-ads-header {
-    display: none;
-    background-color: #FC5252;
-    border : none;
-    width: 24px;
-    height: 24px;
-}
-
-
-/* Styles pour la div .ads-header quand le bouton est coché */
-.toggle-ads-header:checked + .ads-header {
-    display: none;
-}
-
-/*MAIN SECTION*/
-
-main .bg2 {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-}
-
-
-
-.video-overlay-text {
-    position: absolute;
-    top: 80%; 
-    left: 25%; 
-    transform: translate(-50%, -50%); 
-    text-shadow: 2px 2px 4px #000; 
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    0% {
+    .dropdown.offres {
+        position: absolute;
+        width: 200px;
+        height: 280px;
+        top: 22px; 
         opacity: 0;
+        visibility: hidden;
+        padding: 10px;
+        border: 1px solid #ccc;
+        z-index: 1; 
+        background: #fff; 
+        transition: 0.3s ease-in-out;
     }
-    100% {
+
+    .header-center-bottom li:hover .dropdown.offres {
         opacity: 1;
+        visibility: visible;
+    }
+
+    .dropdown.offres li {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .dropdown.offres li a {
+        color: black;
+        font-weight: normal;
+    }
+
+    .dropdown.offres li h3 {
+        text-align: center;
+    }
+
+
+    .dropdown.offres li a::after {
+        content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
+        margin-left: 5px;
+    }
+
+    .header-center-bottom .dropdown.offres li a::before, .header-center-bottom .dropdown.services li a::before {
+        transition: none; 
+        text-decoration: none;
+    }
+
+    /* Additional header Bar */
+    .ads-header {
+        background-color: #FC5252;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ads-header p {
+        color: white;
+        padding-top: 1.2%;
+        width: 100%;
+        margin-left: 5%; 
+    }
+
+    .ads-header a {
+        text-decoration: none;
+        color: white;
+        padding-top: 1.2%;
+        width: 99%;
+    }
+
+    .ads-header a:hover {
+        text-decoration: underline;
+        color: white;
+        padding-top: 1.2%;
+        width: 99%;
+    }
+
+
+    .ads-header i {
+        font-size: 25px;
+        color: #fff;
+        margin-top: 12px;
+        margin-right: 15px;
+    }
+
+    .ads-header i:hover {
+        color: #000;
+        cursor: pointer;
+    }
+
+    /* Styles par défaut pour le bouton */
+    .toggle-ads-header {
+        display: none;
+        background-color: #FC5252;
+        border : none;
+        width: 24px;
+        height: 24px;
+    }
+
+
+    /* Styles pour la div .ads-header quand le bouton est coché */
+    .toggle-ads-header:checked + .ads-header {
+        display: none;
+    }
+
+    /*MAIN SECTION*/
+
+    main .bg2 {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+
+
+    .video-overlay-text {
+        position: absolute;
+        top: 80%; 
+        left: 25%; 
+        transform: translate(-50%, -50%); 
+        text-shadow: 2px 2px 4px #000; 
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .video-overlay-text h2 {
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    .video-overlay-text p {
+        color: #fff;
+        font-size: 20px;
+        margin-top: 0;
+        margin-left: 2%;
+    }
+
+    .video-overlay-text:hover {
+        color: #FC5252;
+        cursor: pointer;
+    }
+
+    main .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+
+    main .flex-container .velo img {
+        width: 155px;
+        height: 115px;
+        margin: 10px;
+    }
+
+    main .flex-container .velo img:hover {
+        width: 155px;
+        height: 115px;
+        margin: 10px;
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    main .flex-container .trottinette img {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+    }
+
+    main .flex-container .trottinette img:hover {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    main .flex-container .segway img {
+        width: 120px;
+        height: 120px;
+        margin-top: 10px;
+    } 
+
+    main .flex-container .segway img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    /*Propositions section*/
+    .choose-transport h2 {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .choose-transport hr {
+        width: 25%;
+        margin-left: 38%;
+        margin-top: 1.5%;
+        margin-bottom: 5%;
+        border-style: solid none;
+        border-color: #FC5252;
+        border-width: 4px;
+        height: 6px;
+    }
+
+    /*Etudiant section*/
+    .etudiant-section {
+    background: url(./assets/bgetudiant.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items:first baseline;  
+    }
+
+    .etudiant-section .nos-offres {
+        background-color: #D9D9D9;
+        height: 275px;
+        width: 200px;
+        border-radius: 15px;
+        margin-left: 5%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 20px; 
+        box-shadow: 0 2px 4px #00000027; 
+    }
+
+    .etudiant-section .nos-offres p{
+        color: #000;
+        font-weight: bold;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .etudiant-section .nos-offres button {
+        background-color: #FC5252;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px;
+        padding: 10px 20px; 
+        width: 80%;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
+    }
+
+    .etudiant-section .nos-offres button:hover {
+        background-color: #000;
+        font-size: 14px;
+    }
+
+    .etudiant-section .nos-offres a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /*Contact section*/
+    .contact-section {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 520px;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .choose-transport {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-contact-section {
+        width: 60%;
+    }
+
+    .img-contact-section img {
+        width: 350px;
+        margin-top: 10%;
+        margin-left: 40%;
+    }
+
+    .nous-contacter {
+        width:  40%;
+        margin-top: 10%;
+    }
+
+    .nous-contacter h3 {
+        margin-bottom: 0.5%;
+        margin-left: 10%;
+    }
+
+    .nous-contacter hr {
+        width: 18%;
+        margin-left: 15%;
+        margin-bottom: 5%;
+        border-style: solid none;
+        border-color: #FC5252;
+        border-width: 4px;
+        height: 6px;
+    }
+
+    .nous-contacter p {
+        margin-right: 20%;
+        margin-top: 20px;
+        font-size: 15px;
+        width: 60%;
+    }
+
+    .nous-contacter a {
+        text-decoration: none;
+        color: #FC5252;
+        font-style: italic;
+    }
+
+    .nous-contacter a:hover {
+        text-decoration: underline;
+        color: #000;
+    }
+
+
+    /*FOOTER*/
+    footer {
+        background-color: #ccc; 
+        border-top: 2px solid #000;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        color: #000;
+        padding: 20px;
+        position: relative;
+    }
+
+
+    footer ul li {
+        margin: 2px 0;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    footer ul li a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    .flex-container-footer {
+        display: flex;
+        position: relative;   
+        padding-top: 20px;
+    }
+
+    .flex-container-footer h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product-hunt {
+        background-color: #fff;
+        width: 20%;
+        height: 80px;
+        margin: 0 auto;
+        margin-top: -60px;
+        border: 2px solid #000;
+    }
+
+    .product-hunt h3 {
+        font-size: 20px;
+        text-align: center;
+        color: #000;
+    }
+
+    .stars {
+        margin-top: -6px;
+        font-size: 34px;
+        color: #FFD700; 
+        text-align: center;
+    }
+
+    .product-hunt p {
+        font-size: 12px;
+        text-align: center;
+        color: #444;
+        margin-top: -22px;
+    }
+
+    #footer-logo {
+        max-width: 150px;
+        height: 150px; 
+        display: block;
+        margin: 0 auto;
+        margin-left: 50%;
+        margin-top: -2%;
     }
 }
 
-.video-overlay-text h2 {
-    color: #fff;
-    font-size: 40px;
-    margin-bottom: 0;
+
+
+@media(max-width: 490px){ 
+    *{
+        top: 0;
+        margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        resize: none;
+    }
+    
+    /*header BAR*/
+    nav {
+        background-color: #f0f0f0;
+        width: 100%;
+        top: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .navbar-computer{
+        display: none;
+    }
+
+    .navbar-mobile img {
+        height: 30px;
+        margin-left: 40%;
+    }
+
+    /*Permet de cacher et d'afficher le menu burger*/
+    .header-center-bottom {
+        display: none;
+    }
+    
+    #checknav{
+        display: none;
+        margin-bottom: 5%;
+    }
+
+    #checknav:checked ~ .header-center-bottom {
+        display: block;
+    }
+    
+    .header-center-bottom ul {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-right: 14%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .header-center-bottom li {
+        list-style: none;
+    }
+    
+    .header-center-bottom li a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+        display: table;
+    }
+
+    .header-center-bottom li a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    /* Additional header Bar */
+    .ads-header {
+        background-color: #FC5252;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .ads-header p {
+        color: white;
+        margin-top: 3.1%;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+    
+    .ads-header a {
+        text-decoration: none;
+        color: white;
+        padding-top: 1.2%;
+        width: 99%;
+    }
+    
+    .ads-header a:hover {
+        text-decoration: underline;
+        color: white;
+        padding-top: 1.2%;
+        width: 99%;
+    }
+    
+    
+    .ads-header i {
+        font-size: 25px;
+        color: #fff;
+        margin-top: 12px;
+        margin-right: 15px;
+    }
+    
+    .ads-header i:hover {
+        color: #000;
+        cursor: pointer;
+    }
+    
+    /* Styles par défaut pour le bouton */
+    .toggle-ads-header {
+        display: none;
+        background-color: #FC5252;
+        border : none;
+        width: 24px;
+        height: 24px;
+    }
+    
+    
+    /* Styles pour la div .ads-header quand le bouton est coché */
+    .toggle-ads-header:checked + .ads-header {
+        display: none;
+    }
+    
+    /*MAIN SECTION*/
+    main .bg2 {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    
+    
+    .video-overlay-text {
+        position: absolute;
+        top: 40%; 
+        left: 40%; 
+        transform: translate(-50%, -50%); 
+        text-shadow: 2px 2px 4px #000; 
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .video-overlay-text h2 {
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    
+    .video-overlay-text p {
+        color: #fff;
+        font-size: 20px;
+        margin-top: 0;
+        margin-left: 2%;
+    }
+    
+    .video-overlay-text:hover {
+        color: #FC5252;
+        cursor: pointer;
+    }
+    
+    main .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    
+    main .flex-container .velo img {
+        width: 155px;
+        height: 115px;
+        margin: 10px;
+    }
+    
+    main .flex-container .velo img:hover {
+        width: 155px;
+        height: 115px;
+        margin: 10px;
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    
+    main .flex-container .trottinette img {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+    }
+    
+    main .flex-container .trottinette img:hover {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    
+    main .flex-container .segway img {
+        width: 120px;
+        height: 120px;
+        margin-top: 10px;
+    } 
+    
+    main .flex-container .segway img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    
+    /*Propositions section*/
+    .choose-transport h2 {
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    .choose-transport hr {
+        width: 25%;
+        margin-left: 38%;
+        margin-top: 1.5%;
+        margin-bottom: 5%;
+        border-style: solid none;
+        border-color: #FC5252;
+        border-width: 4px;
+        height: 6px;
+    }
+    
+    /*Etudiant section*/
+    .etudiant-section {
+    background: url(./assets/bgetudiant.png) no-repeat left;
+        background-size: cover;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items:first baseline;  
+    }
+    
+    .etudiant-section .nos-offres {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .etudiant-section .nos-offres p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #fff;
+        -webkit-text-stroke: 1px #000;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    
+    .etudiant-section .nos-offres button {
+        background-color: #FC5252;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 15px;
+        padding: 10px 20px; 
+        width: 80%;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
+    }
+    
+    .etudiant-section .nos-offres button:hover {
+        background-color: #000;
+        font-size: 14px;
+    }
+    
+    .etudiant-section .nos-offres a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    /*Contact section*/
+    .contact-section {
+        height: 50vh;
+        width: 100vw;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+    
+    .img-contact-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-contact-section img {
+        width: 250px;
+        height: 250px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .choose-transport {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nous-contacter {
+        width:  100%;
+        margin-top: 10%;
+    }
+    
+    .nous-contacter h3 {
+        text-align: center;
+    }
+    
+    .nous-contacter hr {
+        width: 18%;
+        margin-left: 41%;
+        border-style: solid none;
+        border-color: #FC5252;
+        border-width: 4px;
+        height: 6px;
+    }
+    
+    .nous-contacter p {
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .nous-contacter a {
+        text-decoration: none;
+        color: #FC5252;
+        font-style: italic;
+    }
+    
+    .nous-contacter a:hover {
+        text-decoration: underline;
+        color: #000;
+    }
+    
+    
+    /*FOOTER*/
+    footer {
+        background-color: #ccc; 
+        border-top: 2px solid #000;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        color: #000;
+        padding: 20px;
+        position: relative;
+    }
+    
+    
+    footer ul li {
+        margin: 2px 0;
+    }
+    
+    footer ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    footer ul li a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+    
+    .flex-container-footer {
+        display: flex;
+        position: relative;   
+        padding-top: 20px;
+    }
+    
+    .flex-container-footer h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .product-hunt {
+        background-color: #fff;
+        width: 46%;
+        height: 80px;
+        margin: 0 auto;
+        margin-top: -60px;
+        border: 2px solid #000;
+    }
+    
+    .product-hunt h3 {
+        font-size: 20px;
+        text-align: center;
+        color: #000;
+    }
+    
+    .stars {
+        margin-top: -6px;
+        font-size: 34px;
+        color: #FFD700; 
+        text-align: center;
+    }
+    
+    .product-hunt p {
+        font-size: 12px;
+        text-align: center;
+        color: #444;
+        margin-top: -22px;
+    }
+    
+    #footer-logo {
+        max-width: 150px;
+        height: 150px; 
+        display: block;
+        margin: 0 auto;
+        margin-left: 50%;
+        margin-top: -2%;
+    }
 }
-
-.video-overlay-text p {
-    color: #fff;
-    font-size: 20px;
-    margin-top: 0;
-    margin-left: 2%;
-}
-
-.video-overlay-text:hover {
-    color: #FC5252;
-    cursor: pointer;
-}
-
-main .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 5%;
-}
-
-main .flex-container .velo img {
-    width: 155px;
-    height: 115px;
-    margin: 10px;
-}
-
-main .flex-container .velo img:hover {
-    width: 155px;
-    height: 115px;
-    margin: 10px;
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-main .flex-container .trottinette img {
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-}
-
-main .flex-container .trottinette img:hover {
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-main .flex-container .segway img {
-    width: 120px;
-    height: 120px;
-    margin-top: 10px;
-} 
-
-main .flex-container .segway img:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-/*Propositions section*/
-.choose-transport h2 {
-    text-align: center;
-    margin-top: 5%;
-}
-
-.choose-transport hr {
-    width: 25%;
-    margin-left: 38%;
-    margin-top: 1.5%;
-    margin-bottom: 5%;
-    border-style: solid none;
-    border-color: #FC5252;
-    border-width: 4px;
-    height: 6px;
-}
-
-/*Etudiant section*/
-.etudiant-section {
-background: url(./assets/bgetudiant.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items:first baseline;  
-}
-
-.etudiant-section .nos-offres {
-    background-color: #D9D9D9;
-    height: 275px;
-    width: 200px;
-    border-radius: 15px;
-    margin-left: 5%;
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 20px; 
-    box-shadow: 0 2px 4px #00000027; 
-}
-
-.etudiant-section .nos-offres p{
-    color: #000;
-    font-weight: bold;
-    font-size: 22px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.etudiant-section .nos-offres button {
-    background-color: #FC5252;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 15px;
-    padding: 10px 20px; 
-    width: 80%;
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
-}
-
-.etudiant-section .nos-offres button:hover {
-    background-color: #000;
-    font-size: 14px;
-}
-
-.etudiant-section .nos-offres a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/*Contact section*/
-.contact-section {
-    display: flex;
-    justify-content: space-evenly;
-    height: 520px;
-    width: 100%;
-    margin-bottom: 2%;
-}
-
-.choose-transport {
-    width: 100%;
-    height: 100%;
-}
-
-.img-contact-section {
-    width: 60%;
-}
-
-.img-contact-section img {
-    width: 350px;
-    margin-top: 10%;
-    margin-left: 40%;
-}
-
-.nous-contacter {
-    width:  40%;
-    margin-top: 10%;
-}
-
-.nous-contacter h3 {
-    margin-bottom: 0.5%;
-    margin-left: 10%;
-}
-
-.nous-contacter hr {
-    width: 18%;
-    margin-left: 15%;
-    margin-bottom: 5%;
-    border-style: solid none;
-    border-color: #FC5252;
-    border-width: 4px;
-    height: 6px;
-}
-
-.nous-contacter p {
-    margin-right: 20%;
-    margin-top: 20px;
-    font-size: 15px;
-    width: 60%;
-}
-
-.nous-contacter a {
-    text-decoration: none;
-    color: #FC5252;
-    font-style: italic;
-}
-
-.nous-contacter a:hover {
-    text-decoration: underline;
-    color: #000;
-}
-
-
-/*FOOTER*/
-footer {
-    background-color: #ccc; 
-    border-top: 2px solid #000;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    color: #000;
-    padding: 20px;
-    position: relative;
-}
-
-
-footer ul li {
-    margin: 2px 0;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-footer ul li a:hover {
-    text-decoration: underline;
-    color: #fff;
-}
-
-.flex-container-footer {
-    display: flex;
-    position: relative;   
-    padding-top: 20px;
-}
-
-.flex-container-footer h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.product-hunt {
-    background-color: #fff;
-    width: 20%;
-    height: 80px;
-    margin: 0 auto;
-    margin-top: -60px;
-    border: 2px solid #000;
-}
-
-.product-hunt h3 {
-    font-size: 20px;
-    text-align: center;
-    color: #000;
-}
-
-.stars {
-    margin-top: -6px;
-    font-size: 34px;
-    color: #FFD700; 
-    text-align: center;
-}
-
-.product-hunt p {
-    font-size: 12px;
-    text-align: center;
-    color: #444;
-    margin-top: -22px;
-}
-
-#footer-logo {
-    max-width: 150px;
-    height: 150px; 
-    display: block;
-    margin: 0 auto;
-    margin-left: 50%;
-    margin-top: -2%;
-}
-

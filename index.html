@@ -2,42 +2,62 @@
     <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>DouceMob'</title>
     </head>
     <body>
         <header>
-            <div class="top-header">
-                <a href="/"><img id="logoRect" src="./assets/logDM.png" alt="logoRect"></a>
-                <h1>DouceMob'</h1>
-                <p>&laquo; Choisir mon moyen de transport en <br> fonction de mes préférences &raquo;</p>
-            </div>
-            <div class="header-center-bottom">
-                <ul>
-                    <li class="Accueil"><a href="/">Accueil</a></li>
-                    <li class="Offres"><a href="offres.html">Nos offres</a>
-                        <ul class="dropdown offres">
-                            <li><a href="">Etudiant (17-25 ans)</a></li>
-                           <li class="divider"></li>
-                            <li><a href="">Employés Lyon 1 et autres</a></li>
-                            <li class="divider"></li>
-                            <li><h3>Nos services:</h3></li>
-                            <li class="velo"><a href="offres.html#velov">Vélo</a></li>
-                            <li class="trottinette"><a href="offres.html#trottinette">Trottinette</a></li>
-                            <li class="Segway"><a href="offres.html#segway">Segway</a></li>
-                            <li class="divider"></li> 
+            <nav>
+                <div class="navbar-computer">
+                    <div class="top-header">
+                        <a href="/"><img id="logoRect" src="./assets/logDM.png" alt="logoRect"></a>
+                        <h1>DouceMob'</h1>
+                        <p>&laquo; Choisir mon moyen de transport en <br> fonction de mes préférences &raquo;</p>
+                    </div>
+                    <div class="header-center-bottom">
+                        <ul>
+                            <li class="Accueil"><a href="/">Accueil</a></li>
+                            <li class="Offres"><a href="offres.html">Nos offres</a>
+                                <ul class="dropdown offres">
+                                    <li><a href="">Etudiant (17-25 ans)</a></li>
+                                   <li class="divider"></li>
+                                    <li><a href="">Employés Lyon 1 et autres</a></li>
+                                    <li class="divider"></li>
+                                    <li><h3>Nos services:</h3></li>
+                                    <li class="velo"><a href="offres.html#velov">Vélo</a></li>
+                                    <li class="trottinette"><a href="offres.html#trottinette">Trottinette</a></li>
+                                    <li class="Segway"><a href="offres.html#segway">Segway</a></li>
+                                    <li class="divider"></li> 
+                                </ul>
+                            </li>
+                            <li class="Contact" ><a href="contact.html">Contact</a></li>
                         </ul>
-                    </li>
-                    <li class="Contact" ><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <input type="checkbox" id="toggle-ads-header" class="toggle-ads-header">
-            <div class="ads-header">
-                <p><a href="">Étudiant ?</a> Profitez de super avantages pour vos trajets !</p>
-                <label for="toggle-ads-header" class="ads-header-button"><i class='bx bx-x'></i></label>
-            </div>
+                    </div>
+                    <input type="checkbox" id="toggle-ads-header" class="toggle-ads-header">
+                    <div class="ads-header">
+                        <p><a href="">Étudiant ?</a> Profitez de super avantages pour vos trajets !</p>
+                        <label for="toggle-ads-header" class="ads-header-button"><i class='bx bx-x'></i></label>
+                    </div>
+                </div>
+                <div class="navbar-mobile">
+                    <input type="checkbox" name="checkbox-nav" id="checknav"><label for="checknav"><span class="material-symbols-outlined">menu</span><img id="logoRect" src="./assets/logDM.png" alt="logoRect"></label>
+                    <div class="header-center-bottom">
+                        <ul>
+                            <li class="Accueil"><a href="/">🏠Accueil</a></li>
+                            <li class="Offres"><a href="offres.html">🌟Nos offres</a></li>
+                            <li class="Contact" ><a href="contact.html">📧Contact</a></li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" id="toggle-ads-header" class="toggle-ads-header">
+                    <div class="ads-header">
+                        <p><a href="">Étudiant ?</a> Profitez de super avantages pour vos trajets !</p>
+                        <label for="toggle-ads-header" class="ads-header-button"><i class='bx bx-x'></i></label>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main>
             <section class="video-overlay-text">
@@ -59,7 +79,6 @@
                 </div>
                 <div class="segway">
                     <a href="offres.html#segway"><img src="./assets/segway.jpg" alt="Segway"></a>
-
                 </div>
             </div>
            </div>
@@ -73,14 +92,14 @@
                 </div>
            </div>
            <div class="contact-section">
-                <div class="img-contact-section">
-                   <img src="./assets/conseillère.jpg" alt="conseillere pour page contact">
-                </div>
                 <div class="nous-contacter">
                     <h3>Nous Contactez</h3>
                     <hr>
                     <p>Pour toute question ou demande de renseignements supplémentaires, n'hésitez pas à <a href="contact.html">nous contacter</a> par e-mail.</p>
                 </div>
+                <div class="img-contact-section">
+                    <img src="./assets/conseillère.png" alt="conseillere pour page contact">
+                 </div>
            </div>
         </main>
         <footer>
