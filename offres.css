@@ -164,104 +164,84 @@
     main {
         background-color: #fff;
         margin-top: 60px;
-        height: 100vh;
     }
 
-    .sect {
-        height: 48vh;
+    .intro1 {
+        width: 100vw;
+        height: 150vh;
+    }
+
+    .intro1 .flex-container-intro1 {
         display: flex;
         flex-direction: row;
-        justify-content : space-between;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .intro1 .left-container-intro1 {
+        width: 30%;
+        margin-left: 5%;
+    }
+
+    .intro1 .left-container-intro1 h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-weight: lighter;
+    }
+
+    .intro1 .left-container-intro1 p {
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #FC5252;
+    } 
+
+    .intro1 .flex-container-intro1 .left-container-intro1 .cercle {
+        margin-top: 10%;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #FC5252;
+    }
+
+    .intro1 .flex-container-intro1 .left-container-intro1 .cercle p {
+        display: none;
+    }
+
+    .intro1 .flex-container-intro1  .right-container {
+        width: 40%;
+        margin-right: 5%;
+    }
+
+    .intro1 .flex-container-intro1  .right-container p {
+        margin-top: 5%;
+        width: 75%;
+    }
+
+    .intro1 .flex-container-intro1  .right-container button {
+        margin-top: 5%;
+        border: #FC5252 2px solid;
+        height: 80px;
+        width: 250px;
+        font-size: 25px;
+    }
+
+    .intro1 .flex-container-intro1  .right-container button:hover {
+        background-color: #FC5252;
+        color: #fff;
+    }
+
+    .intro1 .section-img {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
-    .sect h2 {
-        font-size: 40px;
-        text-align: center;
-        color: #fff;
-        margin-top: 10%;
-        text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black; 
-    }
-
-    .sect hr {
-        width: 25%;
-        margin-left: 38%;
-        margin-top: 1.5%;
-        margin-bottom: 5%;
-        border-style: solid none;
-        border-color: #FC5252;
-        border-width: 4px;
-        height: 6px;
-    }
-
-    .sect p{
-        font-size: 20px;
-        text-align: right;
-        color: #fff;
-        width: 60%;
-        margin-left: 10%;
-        text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black; 
-    }
-
-    .sect details {
-        margin-left: 10%;
-        font-size: 20px;
-        width: 80%;
-    }
-
-    .sect summary {
-        font-weight: bold;
-        cursor: pointer;
-        color: #fff;
-        text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black; 
-    }
-
-    .sect table {
-        width: 100%;
-        border-collapse: collapse;
-        background-color: #fff;
-        color: #000;
-    }
-
-    .sect th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-
-    .sect th {
-        background-color: #f2f2f2;
-    }
-
-    .sect tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    .left-container {
-        width: 60%;
-    }
-
-    .right-container {
-        width: 40%;
-    }
-
-    .velov {
-        background: url(./assets/velov-offres.jpg) no-repeat center center;
-        background-size: cover;
-    }
-
-    .trottinette {
-        background: url(./assets/tier-offres.jpeg) no-repeat center center;
-        background-size: cover;
-    }
-
-    .segway {
-        background: url(./assets/segway-offres.webp) no-repeat center center;
-        background-size: cover;
-    }
-
-    .sect.img.segway {
-        margin-bottom: 5%;
+    .intro1 .section-img img {
+        width: 80vw;
+        margin-right: 8%;
 
     }
 

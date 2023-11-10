@@ -146,7 +146,6 @@
         text-align: center;
     }
 
-
     .dropdown.offres li a::after {
         content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
         margin-left: 5px;
@@ -223,8 +222,6 @@
         object-fit: cover;
         z-index: -1;
     }
-
-
 
     .video-overlay-text {
         position: absolute;
