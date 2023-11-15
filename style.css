@@ -55,7 +55,6 @@
         margin-left: 10%;
     }
 
-
     .top-header p {
         text-align: center;
         font-style: italic;
@@ -514,8 +513,8 @@
     }
 
     #footer-logo {
-        max-width: 150px;
-        height: 150px; 
+        width: 250px;
+        height: 150px;
         display: block;
         margin: 0 auto;
         margin-left: 50%;
