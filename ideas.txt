@@ -10,23 +10,3 @@ https://www.bhroovi.com/about
 www.audi.fr/
 
 
-page index, page contact, pages services
-
-ajouter technique ARIA
-role search
-privilégier les icons
-GOOGLE font autorisé
-
-green it edition ENI (2021)
-HTML 5 edition eyrolles
-
-"Don't make me think revisited" de steve Krug
-parlez des greves dans nosservices.html
-
-
-
-
-
-Rajoutez une possibilité de fermer l'annonce étudiante
-gif centrale
-segway img  

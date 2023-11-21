@@ -1,22 +1,24 @@
 /* Format ordinateur */
 @media (min-width: 500px) {
     *{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        box-sizing: border-box;
-        resize: none;   
+    top: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    resize: none;   
     }
 
     body {
         font-family: Arial, sans-serif;
-        top: 0;
-        margin: 0; 
-        padding: 0;
+        width: 100vw;
+        max-width: 100vw;
     }
 
     /*header BAR*/
     nav {
         background-color: #f0f0f0;
         width: 100%;
+        top: 0;
         position: relative;
         z-index: 1;
     }
@@ -24,6 +26,7 @@
     .navbar-mobile{
         display: none;
     }
+
 
     .top-header {
         display: flex;
@@ -151,7 +154,7 @@
         transition: none; 
         text-decoration: none;
     }
-
+    
     header hr {
         border-style: solid none;
         border-color: #FC5252;
