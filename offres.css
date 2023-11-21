@@ -573,6 +573,7 @@
         height: 80px;
         width: 250px;
         font-size: 25px;
+        margin-left: 10%;
     }
 
     .intro1 .flex-container-intro1  .right-container button:hover {
