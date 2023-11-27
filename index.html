@@ -1,130 +1,129 @@
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="style.css">
-        <title>DouceMob'</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="navbar-computer">
-                    <div class="top-header">
-                        <a href="/"><img id="logoRectComputer" src="./assets/logDM.png" alt="logoRect"></a>
-                        <h1>DouceMob'</h1>
-                        <p>&laquo; Choisir mon moyen de transport en <br> fonction de mes préférences &raquo;</p>
-                    </div>
-                    <div class="header-center-bottom">
-                        <ul>
-                            <li class="Accueil"><a href="/">Accueil</a></li>
-                            <li class="Offres"><a href="offres.html">Nos offres</a>
-                                <ul class="dropdown offres">
-                                    <li><a href="">Etudiant (17-25 ans)</a></li>
-                                   <li class="divider"></li>
-                                    <li><a href="">Employés Lyon 1 et autres</a></li>
-                                    <li class="divider"></li>
-                                    <li><h3>Nos services:</h3></li>
-                                    <li class="velo"><a href="offres.html#velov">Vélo</a></li>
-                                    <li class="trottinette"><a href="offres.html#trottinette">Trottinette</a></li>
-                                    <li class="Segway"><a href="offres.html#segway">Segway</a></li>
-                                    <li class="divider"></li> 
-                                </ul>
-                            </li>
-                            <li class="Contact" ><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <input type="checkbox" id="toggle-ads-header" class="toggle-ads-header">
-                    <div class="ads-header">
-                        <p><a href="">Étudiant ?</a> Profitez de super avantages pour vos trajets !</p>
-                        <label for="toggle-ads-header" class="ads-header-button"><i class='bx bx-x'></i></label>
-                    </div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>DouceMob'</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar-computer">
+                <div class="top-header">
+                    <a href="/"><img id="logoRectComputer" src="./assets/logDM.png" alt="logoRect"></a>
+                    <h1>DouceMob'</h1>
+                    <p>&laquo; Choisir mon moyen de transport en <br> fonction de mes préférences &raquo;</p>
                 </div>
-                <div class="navbar-mobile">
-                    <input type="checkbox" name="checkbox-nav" id="checknav"><label for="checknav"><span class="material-symbols-outlined">menu</span><img id="logoRect" src="./assets/logDM.png" alt="logoRect"></label>
-                    <div class="header-center-bottom">
-                        <ul>
-                            <li class="Accueil"><a href="/">🏠Accueil</a></li>
-                            <li class="Offres"><a href="offres.html">🌟Nos offres</a></li>
-                            <li class="Contact" ><a href="contact.html">📧Contact</a></li>
-                        </ul>
-                    </div>
-                    <input type="checkbox" id="toggle-ads-header" class="toggle-ads-header">
-                    <div class="ads-header">
-                        <p><a href="">Étudiant ?</a> Profitez de super avantages pour vos trajets !</p>
-                        <label for="toggle-ads-header" class="ads-header-button"><i class='bx bx-x'></i></label>
-                    </div>
+                <div class="header-center-bottom">
+                    <ul>
+                        <li class="Accueil"><a href="/">Accueil</a></li>
+                        <li class="Offres"><a href="offres.html">Nos offres</a>
+                            <ul class="dropdown offres">
+                                <li><a href="">Etudiant (17-25 ans)</a></li>
+                               <li class="divider"></li>
+                                <li><a href="">Employés Lyon 1 et autres</a></li>
+                                <li class="divider"></li>
+                                <li><h3>Nos services:</h3></li>
+                                <li class="velo"><a href="offres.html#velov">Vélo</a></li>
+                                <li class="trottinette"><a href="offres.html#trottinette">Trottinette</a></li>
+                                <li class="Segway"><a href="offres.html#segway">Segway</a></li>
+                                <li class="divider"></li> 
+                            </ul>
+                        </li>
+                        <li class="Contact" ><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <section class="video-overlay-text">
-                <h2>Bienvenue sur DouceMob'</h2>
-                <p>Le site des transports doux</p> 
-            </section>
-            <video class="bg2" loop autoplay muted playsinline>
-                <source src="./assets/bg2.mp4" type="video/mp4">
-            </video>
-            <div class="choose-transport">
-            <h2>Nos propositions (offres) de transport</h2>
-            <hr>
-            <div class="flex-container">
-                <div class="velo">
-                    <a href="offres.html#velov"><img src="./assets/velov.png" alt="velo"></a>
-                </div>
-                <div class="trottinette">
-                    <a href="offres.html#trottinette"><img src="./assets/tiers.png" alt="trottinette"></a>
-                </div>
-                <div class="segway">
-                    <a href="offres.html#segway"><img src="./assets/Segway.png" alt="Segway"></a>
+                <input type="checkbox" id="toggle-ads-header" class="toggle-ads-header">
+                <div class="ads-header">
+                    <p><a href="">Étudiant ?</a> Profitez de super avantages pour vos trajets !</p>
+                    <label for="toggle-ads-header" class="ads-header-button"><i class='bx bx-x'></i></label>
                 </div>
             </div>
-           </div>
-           <div class="etudiant-section">
-                <div class="nos-offres">
-                    <p>
-                        Ne vous inquiétez pas,
-                        on vous comprend et on ne vous a pas oubliez 🙂
-                    </p>
-                    <button><a href="offres.html#etudiant">Nos offres</a></button>
+            <div class="navbar-mobile">
+                <input type="checkbox" name="checkbox-nav" id="checknav"><label for="checknav"><span class="material-symbols-outlined">menu</span><img id="logoRect" src="./assets/logDM.png" alt="logoRect"></label>
+                <div class="header-center-bottom">
+                    <ul>
+                        <li class="Accueil"><a href="/">🏠Accueil</a></li>
+                        <li class="Offres"><a href="offres.html">🌟Nos offres</a></li>
+                        <li class="Contact" ><a href="contact.html">📧Contact</a></li>
+                    </ul>
                 </div>
-           </div>
-           <div class="contact-section">
-                <div class="nous-contacter">
-                    <h3>Nous Contactez</h3>
-                    <hr>
-                    <p>Pour toute question ou demande de renseignements supplémentaires, n'hésitez pas à <a href="contact.html">nous contacter</a> par e-mail.</p>
+                <input type="checkbox" id="toggle-ads-header" class="toggle-ads-header">
+                <div class="ads-header">
+                    <p><a href="">Étudiant ?</a> Profitez de super avantages pour vos trajets !</p>
+                    <label for="toggle-ads-header" class="ads-header-button"><i class='bx bx-x'></i></label>
                 </div>
-                <div class="img-contact-section">
-                    <img src="./assets/conseillère.png" alt="conseillere pour page contact">
-                 </div>
-           </div>
-        </main>
-        <footer>
-            <div class="product-hunt">
-                <h3>Customer review</h3>
-                <div class="stars">
-                    ★★★★★
-                </div>
-                <br>
-                <p>(4.8) based on 462 reviews</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="video-overlay-text">
+            <h2>Bienvenue sur DouceMob'</h2>
+            <p>Le site des transports doux</p> 
+        </section>
+        <video class="bg2" loop autoplay muted playsinline>
+            <source src="./assets/bg2.mp4" type="video/mp4">
+        </video>
+        <div class="choose-transport">
+        <h2>Nos propositions (offres) de transport</h2>
+        <hr>
+        <div class="flex-container">
+            <div class="velo">
+                <a href="offres.html#velov"><img src="./assets/velov.png" alt="velo"></a>
+            </div>
+            <div class="trottinette">
+                <a href="offres.html#trottinette"><img src="./assets/tiers.png" alt="trottinette"></a>
+            </div>
+            <div class="segway">
+                <a href="offres.html#segway"><img src="./assets/Segway.png" alt="Segway"></a>
+            </div>
+        </div>
+       </div>
+       <div class="etudiant-section">
+            <div class="nos-offres">
+                <p>
+                    Ne vous inquiétez pas,
+                    on vous comprend et on ne vous a pas oubliez 🙂
+                </p>
+                <button><a href="offres.html#etudiant">Nos offres</a></button>
+            </div>
+       </div>
+       <div class="contact-section">
+            <div class="nous-contacter">
+                <h3>Nous Contacter</h3>
+                <hr>
+                <p>Pour toute question ou demande de renseignements supplémentaires, n'hésitez pas à <a href="contact.html">nous contacter</a> par e-mail.</p>
+            </div>
+            <div class="img-contact-section">
+                <img src="./assets/conseillère.png" alt="conseillere pour page contact">
+             </div>
+       </div>
+    </main>
+    <footer>
+        <div class="product-hunt">
+            <h3>Customer review</h3>
+            <div class="stars">
+                ★★★★★
             </div>
             <br>
-            <div class="flex-container-footer">
-                <section>
-                    <h2>Contact@Entreprise.com</h2>
-                    <ul>
-                        <li><a href="/">Accueil</a></li>    
-                        <li><a href="offres.html">Nos offres</a></li>
-                        <li><a href="contact.html">Contactez nous</a></li>
-                    </ul>
-                    <br>
-                    <p>© 2023 DouceMob’. Tous droits réservés.</p>
-                </section>
-                <img id="footer-logo" src="./assets/Lyon1.png" alt="logo">
-            </div>
-        </footer>
-    </body>
-    </html>
-    
+            <p>(4.8) based on 462 reviews</p>
+        </div>
+        <br>
+        <div class="flex-container-footer">
+            <section>
+                <h2>Contact@Entreprise.com</h2>
+                <ul>
+                    <li><a href="/">Accueil</a></li>    
+                    <li><a href="offres.html">Nos offres</a></li>
+                    <li><a href="contact.html">Contactez nous</a></li>
+                </ul>
+                <br>
+                <p>© 2023 DouceMob’. Tous droits réservés.</p>
+            </section>
+            <img id="footer-logo" src="./assets/Lyon1.png" alt="logo">
+        </div>
+    </footer>
+</body>
+</html>

@@ -628,6 +628,8 @@
         margin-right: 5%;
     }
 
+    
+
     .section-offres .offres-blabla{
         background-color: #3D89F8;
         width: 90vw;
@@ -684,9 +686,7 @@
 
     .section-offres .offres-blabla details[open] summary{
         list-style-type: "⬇️";
-    }
-
-    
+    }    
     
     /*FOOTER*/
     footer {
@@ -699,6 +699,7 @@
         color: #000;
         padding: 20px;
         position: relative;
+
     }
     
     
@@ -731,16 +732,4 @@
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

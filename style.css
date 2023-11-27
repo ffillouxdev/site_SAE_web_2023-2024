@@ -385,7 +385,6 @@
         flex-direction: row-reverse;
         height: 520px;
         width: 100%;
-        margin-bottom: 2%;
     }
 
     .choose-transport {
@@ -661,8 +660,6 @@
         z-index: -1;
     }
     
-    
-    
     .video-overlay-text {
         position: absolute;
         top: 40%; 
@@ -748,6 +745,8 @@
         transform: scale(1.1);
         transition: 0.5s;
     }
+
+    
     
     /*Propositions section*/
     .choose-transport h2 {
@@ -765,6 +764,9 @@
         border-width: 4px;
         height: 6px;
     }
+
+
+    
     
     /*Etudiant section*/
     .etudiant-section {
@@ -816,31 +818,33 @@
         text-decoration: none;
         color: #fff;
     }
+
+    
     
     /*Contact section*/
     .contact-section {
-        height: 50vh;
-        width: 100vw;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        width: 100vw;
+        margin-bottom: 15%;
     }
-    
+
     .img-contact-section {
-        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .img-contact-section img {
         width: 250px;
         height: 250px;
-        margin-right: 40%;
-        margin-top: 10%;
-        margin-bottom: 10%;
     }
     .choose-transport {
         width: 100%;
         height: 100%;
     }
-    
+
     .nous-contacter {
         width:  100%;
         margin-top: 10%;
@@ -923,7 +927,7 @@
         height: 80px;
         margin: 0 auto;
         margin-top: -60px;
-        border: 2px solid #000;
+        border: 2px s   olid #000;
     }
     
     .product-hunt h3 {
@@ -951,26 +955,25 @@
     }
 }
 
+
 @media (max-width: 991px) {
     .contact-section {
-        height: 90vh;
-        width: 100vw;
-        margin-bottom: 10%;  
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 70vh;
+        width: 100vw;
+        margin-bottom: 25%;
     }
     
     .img-contact-section {
-        width: 100%;
         display: flex;
-        justify-content: left;
+        justify-content: center;
     }
 
     .img-contact-section img {
         width: 350px;
         height: 350px;
-        margin-top: 10%;
     }
 
     .nous-contacter {
@@ -1091,5 +1094,13 @@
         margin: 0 auto;
         margin-top: -60px;
         border: 2px solid #000;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        width: 100vw;
     }
 }
