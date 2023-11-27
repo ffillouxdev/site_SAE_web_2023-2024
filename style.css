@@ -144,7 +144,6 @@
     }
 
     .dropdown.offres li a::after {
-        content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
         margin-left: 5px;
     }
 
@@ -324,7 +323,7 @@
 
     /*Etudiant section*/
     .etudiant-section {
-    background: url(./assets/bgetudiant.png);
+    background: url(./assets/bgetudiant.webp);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
@@ -770,7 +769,7 @@
     
     /*Etudiant section*/
     .etudiant-section {
-    background: url(./assets/bgetudiant.png) no-repeat left;
+    background: url(./assets/bgetudiant.webp) no-repeat left;
         background-size: cover;
         height: 60vh;
         width: 100vw;
