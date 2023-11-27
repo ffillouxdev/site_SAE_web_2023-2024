@@ -841,14 +841,14 @@
     }
 }
 
-@media screen and (min-width: 813px) {
+@media (min-width: 813px) and (max-width: 1024px) {
     .possibilities>div:nth-child(odd) {
         flex-direction: row-reverse;
     }
 
     .section-offres {
         margin-top: 10%;
-        margin-bottom: 40%;
+        margin-bottom: 30%;
     }
 }
 
