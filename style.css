@@ -745,8 +745,6 @@
         transition: 0.5s;
     }
 
-    
-    
     /*Propositions section*/
     .choose-transport h2 {
         text-align: center;
@@ -763,9 +761,6 @@
         border-width: 4px;
         height: 6px;
     }
-
-
-    
     
     /*Etudiant section*/
     .etudiant-section {
@@ -817,8 +812,6 @@
         text-decoration: none;
         color: #fff;
     }
-
-    
     
     /*Contact section*/
     .contact-section {
@@ -879,7 +872,6 @@
         text-decoration: underline;
         color: #000;
     }
-    
     
     /*FOOTER*/
     footer {
@@ -955,14 +947,15 @@
 }
 
 
+
+
 @media (max-width: 991px) {
     .contact-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 70vh;
+        height: 100vh;
         width: 100vw;
-        margin-bottom: 25%;
     }
     
     .img-contact-section {
@@ -1101,5 +1094,11 @@
         align-items: center;
         height: 70vh;
         width: 100vw;
+    }
+}
+
+@media (max-width: 991px) and (max-height: 420px) {
+    .contact-section {
+        margin-bottom: 40%;
     }
 }
