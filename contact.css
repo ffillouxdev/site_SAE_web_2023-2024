@@ -169,7 +169,7 @@
     }
 
     .Maps {
-        height: 70vh;
+        height: 100vh;
         width: 100vw;
     }
 
@@ -215,6 +215,12 @@
 
     .formulaire-contact .firstname-lastname input {
         width: 45%;
+        height: 40px;
+    }
+
+    .formulaire-contact #email {
+        width: 100%;
+        height: 90px;
     }
 
     .formulaire-contact textarea {
