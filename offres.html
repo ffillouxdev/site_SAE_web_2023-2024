@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="offres.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/offres.css">
     <title>Nos offres</title>
 </head>
 <body id="top">
@@ -22,14 +22,14 @@
                         <li class="Accueil"><a href="/">Accueil</a></li>
                         <li class="Offres"><a href="offres.html">Nos offres</a>
                             <ul class="dropdown offres">
-                                <li><a href="">Etudiant (17-25 ans)</a></li>
-                               <li class="divider"></li>
-                                <li><a href="">Employés Lyon 1 et autres</a></li>
+                                <li><a href="offres.html#etudiantCheckpoint">Etudiant (17-25 ans)</a></li>
+                                <li class="divider"></li>
+                                <li><a href="offres.html#etudiantCheckpoint">Employés Lyon 1 et autres</a></li>
                                 <li class="divider"></li>
                                 <li><h3>Nos services:</h3></li>
-                                <li class="velo"><a href="offres.html#velov">Vélo</a></li>
-                                <li class="trotti"><a href="offres.html#trottinette">Trottinette</a></li>
-                                <li class="Segway"><a href="offres.html#segway">Segway</a></li>
+                                <li class="velo"><a href="offres.html#velovCheckpoint">Vélo</a></li>
+                                <li class="trotti"><a href="offres.html#trotinnetteCheckpoint">Trottinette</a></li>
+                                <li class="Segway"><a href="offres.html#segwayCheckpoint">Segway</a></li>
                                 <li class="divider"></li> 
                             </ul>
                         </li>
@@ -84,8 +84,8 @@
         <div class="possibilities">
             <h2>Les possibilités</h2>
             <hr>
-            <div class="velov">
-                <img src="./assets/velov.jpg" alt="velov">
+            <div class="velov" id="velovCheckpoint">
+                <img src="./assets/velov_offres.webp" alt="velov">
                 <div class="velov-text">
                     <a href="https://velov.grandlyon.com/fr/" target="_blank">
                         <h3>Le Vélov</h3>
@@ -96,7 +96,7 @@
                     </a>
                 </div>
             </div>
-            <div class="tier">
+            <div class="tier" id="trotinnetteCheckpoint">
                 <img src="./assets/tier.webp" alt="tier">
                 <div class="tier-text">
                     <a href="https://www.tier.app/fr/" target="_blank">
@@ -105,8 +105,8 @@
                     </a>
                 </div>
             </div>
-            <div class="segway">
-                <img src="./assets/segway.jpg" alt="segway">
+            <div class="segway" id="segwayCheckpoint">
+                <img src="./assets/segway_offres.webp" alt="segway">
                 <div>
                     <a href="https://fr-fr.segway.com/" target="_blank">
                         <h3>Le segway</h3>
@@ -114,12 +114,13 @@
                             une
                             expérience de transport urbain innovante et écologique. Parfait pour des déplacements fluides et
                             agréables, il convient à tous ceux qui recherchent un moyen de transport à la fois pratique et
-                            respectueux de l'environnement.</p>
+                            respectueux de l'environnement.
+                        </p>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="section-offres">
+        <div class="section-offres" id="etudiantCheckpoint">
             <img src="./assets/actif.webp" alt="etudiant et professeur">
             <div class="offres-blabla">
                 <h3>Nos offres étudiantes et actifs</h3>
@@ -136,7 +137,7 @@
                     <summary>tableauEtudiant</summary>
                     <table>
                         <tr>
-                            <th id="execption"></th>
+                            <th id="execption1"></th>
                             <th>Offre à l'unité</th>
                             <th>durée (min)</th>
                             <th>offres à l'année(17-25 ans)</th>
@@ -176,7 +177,7 @@
                     <summary>tableauActif</summary>
                     <table>
                         <tr>
-                            <th id="execption"></th>
+                            <th id="execption2"></th>
                             <th>Offre à l'unité</th>
                             <th>durée (min)</th>
                             <th>offres à l'année(17-25 ans)</th>

@@ -1,18 +1,88 @@
-/* Format ordinateur */
-@media (min-width: 500px) {
-    *{
+/* des animation Slide*/
+
+@keyframes slideLeftToRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideRightToLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideTopToBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(-60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes slideBottomToTop {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/*GLOBAL*/
+*{
     top: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
-    resize: none;   
-    }
+}
 
-    body {
-        font-family: Arial, sans-serif;
-      
-    }
+body {
+    font-family: Arial, sans-serif;
+    resize: none;
+}
 
+
+
+
+
+/* Format ordinateur */
+@media screen and (min-width: 500px) {
     /*header BAR*/
     nav {
         background-color: #f0f0f0;
@@ -155,7 +225,7 @@
     /* Additional header Bar */
     .ads-header {
         background-color: #FC5252;
-        height: 50px;
+        height: 42px;
         text-align: center;
         display: flex;
         justify-content: space-between;
@@ -204,10 +274,17 @@
         height: 24px;
     }
 
-
     /* Styles pour la div .ads-header quand le bouton est coché */
     .toggle-ads-header:checked + .ads-header {
         display: none;
+    }
+    
+
+    header hr {
+        border-style: solid none;
+        border-color: #FC5252;
+        border-width: 4px;
+        height: 6px;
     }
 
     /*MAIN SECTION*/
@@ -225,16 +302,7 @@
         left: 50%; 
         transform: translateX(-50%); 
         text-shadow: 2px 2px 4px #000; 
-        animation: fadeIn 1.5s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+        animation: opacity 1.5s ease-in-out;
     }
 
     .video-overlay-text h2 {
@@ -272,11 +340,8 @@
     }
 
     main .flex-container .velo img:hover {
-        width: 155px;
-        height: 115px;
-        margin: 10px;
-        transform: scale(1.1);
-        transition: 0.5s;
+        transform: scale(1.2);
+        transition: 0.4s;
     }
 
     main .flex-container .trottinette img {
@@ -286,11 +351,8 @@
     }
 
     main .flex-container .trottinette img:hover {
-        width: 120px;
-        height: 120px;
-        margin: 10px;
-        transform: scale(1.1);
-        transition: 0.5s;
+        transform: scale(1.2);
+        transition: 0.4s;
     }
 
     main .flex-container .segway img {
@@ -300,8 +362,8 @@
     } 
 
     main .flex-container .segway img:hover {
-        transform: scale(1.1);
-        transition: 0.5s;
+        transform: scale(1.2);
+        transition: 0.4s;
     }
 
     /*Propositions section*/
@@ -323,7 +385,7 @@
 
     /*Etudiant section*/
     .etudiant-section {
-    background: url(./assets/bgetudiant.webp);
+    background: url(../assets/bgetudiant.webp);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
@@ -346,6 +408,12 @@
         align-items: center; 
         padding: 20px; 
         box-shadow: 0 2px 4px #00000027; 
+        opacity: 0;
+    }
+
+    .etudiant-section:hover .nos-offres {
+        animation: slideLeftToRight 0.5s ease-in-out;
+        opacity: 1;
     }
 
     .etudiant-section .nos-offres p{
@@ -356,19 +424,19 @@
         margin-top: 10px;
     }
 
-    .etudiant-section .nos-offres button {
+    .etudiant-section .nos-offres .button-link {
         background-color: #FC5252;
         border: none;
         border-radius: 5px;
         color: #fff;
         font-size: 15px;
-        padding: 10px 20px; 
         width: 80%;
         cursor: pointer;
-        transition: background-color 0.3s ease; 
+        padding: 10px 20px;
+        text-align: center;
     }
 
-    .etudiant-section .nos-offres button:hover {
+    .etudiant-section .nos-offres .button-link:hover {
         background-color: #000;
         font-size: 14px;
     }
@@ -386,6 +454,7 @@
         width: 100%;
     }
 
+
     .choose-transport {
         width: 100%;
         height: 100%;
@@ -393,6 +462,7 @@
 
     .img-contact-section {
         width: 60%;
+        animation: slideLeftToRight 1s ease-in-out;
     }
 
     .img-contact-section img {
@@ -401,9 +471,11 @@
         margin-left: 40%;
     }
 
+
     .nous-contacter {
         width:  40%;
         margin-top: 10%;
+        animation: slideRightToLeft 1s ease-in-out;
     }
 
     .nous-contacter h3 {
@@ -452,7 +524,6 @@
         padding: 20px;
         position: relative;
     }
-
 
     footer ul li {
         margin: 2px 0;
@@ -522,20 +593,11 @@
 
 
 
+
+
+
 /*Format mobile*/
-@media(max-width: 490px){ 
-    *{
-        top: 0;
-        margin: 0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: Arial, sans-serif;
-        resize: none;
-    }
-    
+@media screen and (max-width: 490px){ 
     /*header BAR*/
     nav {
         background-color: #f0f0f0;
@@ -596,7 +658,7 @@
     /* Additional header Bar */
     .ads-header {
         background-color: #FC5252;
-        height: 50px;
+        height: 42px;
         text-align: center;
         display: flex;
         justify-content: space-between;
@@ -650,6 +712,13 @@
     .toggle-ads-header:checked + .ads-header {
         display: none;
     }
+
+    header hr {
+        border-style: solid none;
+        border-color: #FC5252;
+        border-width: 4px;
+        height: 6px;
+    }
     
     /*MAIN SECTION*/
     main .bg2 {
@@ -665,16 +734,7 @@
         left: 40%; 
         transform: translate(-50%, -50%); 
         text-shadow: 2px 2px 4px #000; 
-        animation: fadeIn 1.5s ease-in-out;
-    }
-    
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+        animation: opacity 1.5s ease-in-out;
     }
     
     .video-overlay-text h2 {
@@ -764,7 +824,7 @@
     
     /*Etudiant section*/
     .etudiant-section {
-    background: url(./assets/bgetudiant.webp) no-repeat left;
+    background: url(../assets/bgetudiant.webp) no-repeat left;
         background-size: cover;
         height: 60vh;
         width: 100vw;
@@ -791,7 +851,7 @@
         margin-bottom: 3%;
     }
     
-    .etudiant-section .nos-offres button {
+    .etudiant-section .nos-offres .button-link {
         background-color: #FC5252;
         border: none;
         border-radius: 5px;
@@ -800,10 +860,10 @@
         padding: 10px 20px; 
         width: 80%;
         cursor: pointer;
-        transition: background-color 0.3s ease; 
-    }
+        text-align: center;
+    }    
     
-    .etudiant-section .nos-offres button:hover {
+    .etudiant-section .nos-offres .button-link:hover {
         background-color: #000;
         font-size: 14px;
     }
@@ -918,7 +978,7 @@
         height: 80px;
         margin: 0 auto;
         margin-top: -60px;
-        border: 2px s   olid #000;
+        border: 2px solid #000;
     }
     
     .product-hunt h3 {
@@ -949,7 +1009,17 @@
 
 
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
+    .etudiant-section .nos-offres {
+        animation: none;
+        transition: none;
+    }
+
+    .etudiant-section:hover .nos-offres {
+        animation: none;
+        transition: none;
+    }
+
     .contact-section {
         display: flex;
         flex-direction: column;
@@ -961,6 +1031,8 @@
     .img-contact-section {
         display: flex;
         justify-content: center;
+        transition: none;
+        animation: none;
     }
 
     .img-contact-section img {
@@ -969,7 +1041,9 @@
     }
 
     .nous-contacter {
-        width:  100%;
+        width: 100%;
+        transition: none;
+        animation: none;
     }
 
     .nous-contacter h3 {
@@ -1078,7 +1152,7 @@
     
 }
 
-@media (max-width : 390px){
+@media screen and (max-width : 390px){
     .product-hunt {
         background-color: #fff;
         width: 50%;
@@ -1095,6 +1169,7 @@
         height: 70vh;
         width: 100vw;
     }
+    
 }
 
 @media (max-width: 991px) and (max-height: 420px) {

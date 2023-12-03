@@ -1,17 +1,65 @@
+/* Des animations Slide*/
+@keyframes slideLeftToRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideRightToLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideTopToBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(-60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes slideBottomToTop {
+    0% {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+/*GLOBAL*/
+*{
+    top: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
 /* Format ordinateur */
-@media (min-width: 500px) {
-    *{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        box-sizing: border-box;
-        resize: none;   
-        top: 0;
-        margin: 0; 
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-    }
-
+@media screen and (min-width: 500px) {
     /*header BAR*/
     nav {
         background-color: #f0f0f0;
@@ -143,7 +191,7 @@
     }
 
     .dropdown.offres li a::after {
-        content: url(./assets/rightArrow.png); /*Pour le moment, on utilise une fleche*/
+        content: url(./assets/rightArrow.png);
         margin-left: 5px;
     }
 
@@ -181,6 +229,7 @@
     .intro1 .left-container-intro1 {
         width: 30%;
         margin-left: 5%;
+        animation: slideLeftToRight 1s ease-in-out;
     }
 
     .intro1 .left-container-intro1 h1 {
@@ -211,6 +260,7 @@
     .intro1 .flex-container-intro1  .right-container {
         width: 40%;
         margin-right: 5%;
+        animation: slideRightToLeft 1s ease-in-out;
     }
 
     .intro1 .flex-container-intro1  .right-container p {
@@ -241,8 +291,112 @@
     .intro1 .img-mission img {
         width: 80vw;
         margin-right: 8%;
+        animation: slideBottomToTop 1s ease-in-out;
     }
 
+
+    /*SECTION POSSIBILITES*/
+    .possibilities {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    .possibilities>div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .possibilities img {
+        width: 40vw;
+        height: 20vh;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .possibilities .tier {
+        width: 95vw;
+        height: 80vh;
+        border: 5px solid #FC5252;
+        background: url(../assets/trotinnette.gif) no-repeat center center;
+        background-size: cover;
+        
+    }
+
+    .possibilities .tier-text h3 {
+        font-size: 25px;
+    }
+
+    .possibilities .tier-text p {
+        font-size: 12px;
+        max-height: 280px;
+    }
+
+    .possibilities>div>div {
+        background: #D9D9D9;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5%;
+        color: #414447;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        transition: transform 0.4s ease;
+    }
+
+    .possibilities>div>div h3 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: left;
+        color: #FC5252;
+    }
+
+    .possibilities>div>div p {
+        color: #414447;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
+
+    .possibilities>div>div:hover p {
+        color: #fff;
+    }
+
+    .possibilities>div>div:hover {
+        transform: scale(1.1) rotate(5deg);
+        transition: all 0.4s ease 0s;
+        background-color: #3D89F8;
+    }
+
+    .possibilities h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        color: #080808;
+        transition: all 0.4s ease 0s;
+        text-align: center;
+    }
+
+    .possibilities hr {
+        border: 4px solid #FC5252;
+        width: 20%;
+        margin: 0 auto;
+        margin-top: 1%;
+    }
+
+    .possibilities a {
+        text-decoration: none;
+    }
+
+    /*SECTION OFFRES*/
     .section-offres{
         display: flex;
         flex-direction: column;
@@ -301,7 +455,7 @@
         background-color: #9ac2ff;
     }
 
-    .section-offres .offres-blabla #execption {
+    .section-offres .offres-blabla #execption1, #execption2 {
         background-color: #3D89F8;
         border: none;
     }
@@ -314,91 +468,6 @@
 
     .section-offres .offres-blabla details[open] summary{
         list-style-type: "⬇️";
-    }
-
-    .possibilities {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10%;
-    }
-
-    .possibilities>div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5%;
-    }
-
-    .possibilities img {
-        width: 40vw;
-        height: 20vh;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .possibilities .tier {
-        width: 95vw;
-        height: 80vh;
-        border: 5px solid #FC5252;
-        background: url(./assets/trotinnette.gif) no-repeat center center;
-        background-size: cover;
-    }
-
-    .possibilities .tier-text h3 {
-        font-size: 25px;
-    }
-
-    .possibilities .tier-text p {
-        font-size: 12px;
-        max-height: 280px;
-    }
-
-    .possibilities>div>div {
-        background: #D9D9D9;
-        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
-        width: 25%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding: 1.5%;
-    }
-
-    .possibilities p {
-        color: #414447;
-        text-align: center;
-        font-family: 'Inter', sans-serif;
-        font-size: 12px;
-        line-height: 1.6;
-        letter-spacing: 0.5px;
-    }
-
-    .possibilities h2 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 40px;
-        color: #080808;
-        transition: all 0.4s ease 0s;
-        text-align: center;
-    }
-
-    .possibilities h3 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 30px;
-        font-weight: 900;
-        color: #080808;
-        text-align: left;
-        color: #FC5252;
-    }
-
-    .possibilities hr {
-        border: 4px solid #FC5252;
-        width: 20%;
-        margin: 0 auto;
-        margin-top: 1%;
-    }
-    .possibilities a {
-        text-decoration: none;
     }
 
     /*FOOTER*/
@@ -457,25 +526,24 @@
     #footer-logo {
         display: none;
     }
+
+
+    .possibilities>div>div:hover p {
+        color: #414447;
+    }
+
+    .possibilities>div>div:hover {
+        transform: none;
+        transition: none;
+        background-color: #D9D9D9;
+    }
 }
 
 
 
 
 
-@media(max-width: 490px){
-    *{
-        top: 0;
-        margin: 0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        box-sizing: border-box;
-        outline: none;
-    }
-    
-    body {
-        font-family: Arial, sans-serif;
-    }
-    
+@media screen and (max-width: 490px){
     /*header BAR*/
     nav {
         background-color: #f0f0f0;
