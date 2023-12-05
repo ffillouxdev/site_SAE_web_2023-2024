@@ -191,7 +191,6 @@ body {
     }
 
     .dropdown.offres li a::after {
-        content: url(./assets/rightArrow.png);
         margin-left: 5px;
     }
 
