@@ -172,7 +172,7 @@ ul {
     list-style: none;
 }
 
-/* || HEADER || */
+/* || HEADER, NAVBAR || */
 .header {
     background-color: var(--COLOR-DARKGRAY);
     width: 100%;
@@ -1812,8 +1812,12 @@ ul {
     }
 }
 
-@media screen and (max-width: 812px) {
-    .possibilities>div {
+@media screen and (max-width: 985px) {
+    .possibilities>div:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .possibilities__tier{
         flex-direction: column;
     }
 
@@ -1833,6 +1837,7 @@ ul {
         width: 100%;
         height: 100%;
         margin-bottom: 30%;
+        font-size: 15px;
     }
 
     .possibilities__tier {
