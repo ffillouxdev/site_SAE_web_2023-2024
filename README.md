@@ -14,11 +14,10 @@ Bienvenue sur DouceMob', le site dédié aux transports doux. Notre mission est 
 | Bg         | `#F0F0F0`|
 | Primaire   | `#FC5252`|
 | Secondaire | `#3D89F8`|
-| Header     |          |
+| Header     | `#D9D9D9`|
 | Texte (p)  | `#000`   |
 | Lien (a)   | `#000`   |
-
-
+ 
 
 ### **Comment installer et executer le projet**
 
