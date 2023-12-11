@@ -5,46 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="./assets/IconWeb.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./styles/img-linked/IconWeb.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <title>DouceMob'</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="navbar-computer">
-                <div class="top-header">
-                    <a href="/"><img id="logoRectComputer" src="./assets/logdm.webp" alt="logoRect"></a>
-                    <h1>DouceMob'</h1>
-                    <p>&laquo; Choisir mon moyen de transport en <br> fonction de mes préférences &raquo;</p>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="navbar-ordinateur">
+                <div class="header__top">
+                    <a href="/"><img id="logoRectOrdinateur" src="./assets/logdm.webp" alt="logoRect"></a>
+                    <h1 class="header__h1">DouceMob'</h1>
+                    <p class="header__p center italic">&laquo; Choisir mon moyen de transport en <br> fonction de mes préférences &raquo;</p>
                 </div>
                 <div class="header-center-bottom">
-                    <ul>
-                        <li class="Accueil"><a href="/">Accueil</a></li>
-                        <li class="Offres"><a href="offres.html">Nos offres</a>
+                    <ul class="header__ul">
+                        <li><a href="/">Accueil</a></li>
+                        <li><a href="offres.html">Nos offres</a>
                             <ul class="dropdown offres">
-                                <li><a href="offres.html#etudiantCheckpoint">Etudiant (17-25 ans)</a></li>
-                                <li class="divider"></li>
+                                <li><a href="offres.html#etudiantCheckpoint">Étudiant (17-25 ans)</a></li>
+                                <li class="dropdown-divider"></li>
                                 <li><a href="offres.html#etudiantCheckpoint">Employés Lyon 1 et autres</a></li>
-                                <li class="divider"></li>
-                                <li><h3>Nos services:</h3></li>
-                                <li class="velo"><a href="offres.html#velovCheckpoint">Vélo</a></li>
-                                <li class="trotti"><a href="offres.html#trotinnetteCheckpoint">Trottinette</a></li>
-                                <li class="Segway"><a href="offres.html#segwayCheckpoint">Segway</a></li>
-                                <li class="divider"></li> 
+                                <li class="dropdown-divider"></li>
+                                <li class="li center"><h3>Nos services:</h3></li>
+                                <li class="offres-velo"><a href="offres.html#velovCheckpoint">Vélo</a></li>
+                                <li class="offres-trottinette"><a href="offres.html#trottinetteCheckpoint">Trottinette</a></li>
+                                <li class="offres-segway"><a href="offres.html#segwayCheckpoint">Segway</a></li>
+                                <li class="dropdown-divider"></li>
                             </ul>
                         </li>
-                        <li class="Contact" ><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="navbar-mobile">
-                <input type="checkbox" name="checkbox-nav" id="checknav"><label for="checknav"><span class="material-symbols-outlined">menu</span><img id="logoRect" src="./assets/logdm.webp" alt="logoRect"></label>
+                <input type="checkbox" name="checkbox-nav" id="checknav">
+                <label for="checknav">
+                    <span class="material-symbols-outlined">menu</span>
+                    <img id="logoRect" src="./assets/logdm.webp" alt="logoRect">
+                </label>
                 <div class="header-center-bottom">
                     <ul>
-                        <li class="Accueil"><a href="/">🏠Accueil</a></li>
-                        <li class="Offres"><a href="offres.html">🌟Nos offres</a></li>
-                        <li class="Contact" ><a href="contact.html">📧Contact</a></li>
+                        <li class="mobile-accueil"><a href="/">🏠Accueil</a></li>
+                        <li class="mobile-offres"><a href="offres.html">🌟Nos offres</a></li>
+                        <li class="mobile-contact"><a href="contact.html">📧Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,61 +61,61 @@
         </nav>
     </header>
     <main>
-        <section class="video-overlay-text">
-            <h2>Bienvenue sur DouceMob'</h2>
-            <p>Le site des transports doux</p> 
+        <section class="video-overlay-text">    
+            <h2 class="video-overlay-text__title">Bienvenue sur DouceMob'</h2>
+            <p class="video-overlay-text__description">Le site des transports doux</p> 
         </section>
         <video class="bg2" loop autoplay muted playsinline preload="auto" >
             <source src="./assets/bg2.webm" type="video/mp4">
             votre navigateur ne supporte pas cette video
         </video>
-        <div class="choose-transport">
-        <h2>Nos propositions (offres) de transport</h2>
-        <hr>
-        <div class="flex-container">
-            <div class="velo">
-                <a href="offres.html#velovCheckpoint"><img src="./assets/velov.webp" alt="velo"></a>
+        <div class="propositions">
+            <h2 class="propositions__title center">Nos propositions (offres) de transport</h2>
+            <hr>
+            <div class="propositions__container">
+                <div class="propositions__velo">
+                    <a href="offres.html#velovCheckpoint"><img src="./assets/velov.webp" alt="velo"></a>
+                </div>
+                <div class="propositions__trottinette">
+                    <a href="offres.html#trottinetteCheckpoint"><img src="./assets/tiers.webp" alt="trottinette"></a>
+                </div>
+                <div class="propositions__segway">
+                    <a href="offres.html#segwayCheckpoint"><img src="./assets/Segway.webp" alt="Segway"></a>
+                </div>
             </div>
-            <div class="trottinette">
-                <a href="offres.html#trottinetteCheckpoint"><img src="./assets/tiers.webp" alt="trottinette"></a>
-            </div>
-            <div class="segway">
-                <a href="offres.html#segwayCheckpoint"><img src="./assets/Segway.webp" alt="Segway"></a>
-            </div>
-        </div>
        </div>
-       <div class="etudiant-section" id="etudiant_section">
-            <div class="nos-offres">
+       <div class="etudiant" id="etudiant_section">
+            <div class="etudiant__offres">
                 <p>
                     Ne vous inquiétez pas,
-                    on vous comprend et on ne vous a pas oubliez 🙂
+                    on vous comprend et on ne vous a pas oubliés 🙂
                 </p>
                 <a href="offres.html#etudiantCheckpoint" class="button-link">Nos offres</a>
             </div>
        </div>
-       <div class="contact-section">
-            <div class="nous-contacter">
-                <h3>Nous Contacter</h3>
+       <div class="contact">
+            <div class="contact__nous-contacter">
+                <h2 class="contact_h2">Nous Contacter</h2>
                 <hr>
-                <p>Pour toute question ou demande de renseignements supplémentaires, n'hésitez pas à <a href="contact.html">nous contacter</a> par e-mail.</p>
+                <p>Pour toute question ou demande de renseignements supplémentaires, n'hésitez pas à <a class="a italic" href="contact.html">nous contacter</a> par e-mail.</p>
             </div>
-            <div class="img-contact-section">
+            <div class="contact__img-contact-section">
                 <img src="./assets/conseillère.webp" alt="conseillere pour page contact">
              </div>
        </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="product-hunt">
-            <h3>Customer review</h3>
+            <h3>Avis des clients</h3>
             <div class="stars">
                 ★★★★★
             </div>
             <br>
-            <p>(4.8) based on 462 reviews</p>
+            <p>(4.8) basé sur 462 avis</p>
         </div>
         <br>
-        <div class="flex-container-footer">
-            <section>
+        <div class="footer__container">
+            <section class="footer__section">
                 <h2>Contact@Entreprise.com</h2>
                 <ul>
                     <li><a href="/">Accueil</a></li>    
@@ -121,7 +125,7 @@
                 <br>
                 <p>© 2023 DouceMob’. Tous droits réservés.</p>
             </section>
-            <img id="footer-logo" src="./assets/Lyon1.webp" alt="logo">
+            <img id="footer__logo" src="./assets/Lyon1.webp" alt="logo">
         </div>
     </footer>
 </body>

@@ -5,46 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="./assets/IconWeb.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/offres.css">
+    <link rel="shortcut icon" href="./styles/img-linked/IconWeb.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Nos offres</title>
 </head>
 <body id="top">
-    <header>
-        <nav>
-            <div class="navbar-computer">
-                <div class="top-header">
-                    <a href="index.html"><img id="logoRectComputer" src="./assets/logdm.webp" alt="logo Rectangulaire"></a>
-                    <h1>DouceMob'</h1>
-                    <p>&laquo; Choisir mon moyen de transport en <br> fonction de mes préférences &raquo;</p>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="navbar-ordinateur">
+                <div class="header__top">
+                    <a href="/"><img id="logoRectOrdinateur" src="./assets/logdm.webp" alt="logoRect"></a>
+                    <h1 class="header__h1">DouceMob'</h1>
+                    <p class="header__p center italic">&laquo; Choisir mon moyen de transport en <br> fonction de mes préférences &raquo;</p>
                 </div>
                 <div class="header-center-bottom">
-                    <ul>
-                        <li class="Accueil"><a href="/">Accueil</a></li>
-                        <li class="Offres"><a href="offres.html">Nos offres</a>
+                    <ul class="header__ul">
+                        <li><a href="/">Accueil</a></li>
+                        <li><a href="offres.html">Nos offres</a>
                             <ul class="dropdown offres">
-                                <li><a href="offres.html#etudiantCheckpoint">Etudiant (17-25 ans)</a></li>
-                                <li class="divider"></li>
+                                <li><a href="offres.html#etudiantCheckpoint">Étudiant (17-25 ans)</a></li>
+                                <li class="dropdown-divider"></li>
                                 <li><a href="offres.html#etudiantCheckpoint">Employés Lyon 1 et autres</a></li>
-                                <li class="divider"></li>
-                                <li><h3>Nos services:</h3></li>
-                                <li class="velo"><a href="offres.html#velovCheckpoint">Vélo</a></li>
-                                <li class="trotti"><a href="offres.html#trotinnetteCheckpoint">Trottinette</a></li>
-                                <li class="Segway"><a href="offres.html#segwayCheckpoint">Segway</a></li>
-                                <li class="divider"></li> 
+                                <li class="dropdown-divider"></li>
+                                <li class="li center"><h3>Nos services:</h3></li>
+                                <li class="offres-velo"><a href="offres.html#velovCheckpoint">Vélo</a></li>
+                                <li class="offres-trottinette"><a href="offres.html#trottinetteCheckpoint">Trottinette</a></li>
+                                <li class="offres-segway"><a href="offres.html#segwayCheckpoint">Segway</a></li>
+                                <li class="dropdown-divider"></li>
                             </ul>
                         </li>
-                        <li class="Contact" ><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="navbar-mobile">
-                <input type="checkbox" name="checkbox-nav" id="checknav"><label for="checknav"><span class="material-symbols-outlined">menu</span><img id="logoRectMobile" src="./assets/logdm.webp" alt="logo Rectangulaire"></label>
+                <input type="checkbox" name="checkbox-nav" id="checknav">
+                <label for="checknav">
+                    <span class="material-symbols-outlined">menu</span>
+                    <img id="logoRect" src="./assets/logdm.webp" alt="logoRect">
+                </label>
                 <div class="header-center-bottom">
                     <ul>
-                        <li class="Accueil"><a href="/">🏠Accueil</a></li>
-                        <li class="Offres"><a href="offres.html">🌟Nos offres</a></li>
-                        <li class="Contact" ><a href="contact.html">📧Contact</a></li>
+                        <li class="mobile-accueil"><a href="/">🏠Accueil</a></li>
+                        <li class="mobile-offres"><a href="offres.html">🌟Nos offres</a></li>
+                        <li class="mobile-contact"><a href="contact.html">📧Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,9 +56,9 @@
         </nav>
     </header>
     <main>
-        <div class="intro1">
-            <div class="flex-container-intro1">
-                <div class="left-container-intro1">
+        <div class="intro">
+            <div class="intro__flex-container">
+                <div class="intro__left-container">
                     <h2>Notre Mission</h2>
                     <p>FACILITEZ L'ACCES A L'INFORMATION SUR LES TRANSPORTS DOUX</p>
                     <div class="cercle">
@@ -62,7 +66,7 @@
                     </div>
                 </div>
                 
-                <div class="right-container">
+                <div class="intro__right-container">
                     <p>
                         Les transports doux sont bien plus qu'une alternative, ils représentent un mode de vie respectueux de l'environnement. 
                         <br>
@@ -78,16 +82,16 @@
                     <button>en savoir plus</button>
                 </div>
             </div>
-            <div class="img-mission">
+            <div class="intro__img-mission">
                 <img src="./assets/section1.webp" alt="image représentant des Trottinette" id="section1-img">
             </div>
         </div>
         <div class="possibilities">
             <h2>Les possibilités</h2>
             <hr>
-            <div class="velov" id="velovCheckpoint">
+            <div class="possibilities__velov" id="velovCheckpoint">
                 <img src="./assets/velov_offres.webp" alt="velov">
-                <div class="velov-text">
+                <div class="possibilities__velov-text">
                     <a href="https://velov.grandlyon.com/fr/" target="_blank">
                         <h3>Le Vélov</h3>
                         <p>Le Vélo'v est notre recommandation phare pour un déplacement doux, écologique et adapté à tous.
@@ -97,18 +101,18 @@
                     </a>
                 </div>
             </div>
-            <div class="tier" id="trotinnetteCheckpoint">
+            <div class="possibilities__tier" id="trottinetteCheckpoint">
                 <img src="./assets/tier.webp" alt="tier">
-                <div class="tier-text">
+                <div class="possibilities__tier-text">
                     <a href="https://www.tier.app/fr/" target="_blank">
                         <h3>La trotinette électrique (Tier)</h3> 
                         <p>La trottinette électrique est notre choix de prédilection pour un transport urbain rapide et respectueux de l'environnement. Idéale pour les trajets courts, elle offre une liberté de mouvement inégalée et se présente comme une alternative parfaite pour ceux qui cherchent une solution de mobilité à la fois moderne et écologique.</p>
                     </a>
                 </div>
             </div>
-            <div class="segway" id="segwayCheckpoint">
+            <div class="possibilities__segway" id="segwayCheckpoint">
                 <img src="./assets/segway_offres.webp" alt="segway">
-                <div>
+                <div class="possibilities__segway-text">
                     <a href="https://fr-fr.segway.com/" target="_blank">
                         <h3>Le segway</h3>
                         <p>Le Segway, avec sa technologie avant-gardiste et son design unique, est notre recommandation pour
@@ -121,9 +125,9 @@
                 </div>
             </div>
         </div>
-        <div class="section-offres" id="etudiantCheckpoint">
+        <div class="offresEA" id="etudiantCheckpoint">
             <img src="./assets/actif.webp" alt="etudiant et professeur">
-            <div class="offres-blabla">
+            <div class="offresEA__blabla">
                 <h3>Nos offres étudiantes et actifs</h3>
                 <p>
                     Nous avons à ♥ de faciliter l’accès aux transport
@@ -212,20 +216,20 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <br>
-        <div class="flex-container-footer">
-            <section>
+        <div class="footer__container">
+            <section class="footer__section">
                 <h2>Contact@Entreprise.com</h2>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>                    
-                    <li><a href="offres.html#top">Nos offres</a></li>                    
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="offres.html#top">Nos offres</a></li>
                     <li><a href="contact.html">Contactez nous</a></li>
                 </ul>
                 <br>
                 <p>© 2023 DouceMob’. Tous droits réservés.</p>
             </section>
-            <img id="footer-logo" src="./assets/Lyon1.webp" alt="logo">
+            <img id="footer__logo" src="./assets/Lyon1.webp" alt="logo">
         </div>
     </footer>
 </body>
