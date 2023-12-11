@@ -174,7 +174,7 @@ ul {
 
 /* || HEADER || */
 .header {
-    background-color: var(--BGCOLOR);
+    background-color: var(--COLOR-DARKGRAY);
     width: 100%;
     position: relative;
     z-index: 1;
@@ -359,7 +359,7 @@ ul {
 
 /* || FOOTER || */
 .footer {
-    background-color: #ccc;
+    background-color: var(--COLOR-DARKGRAY);
     border-top: 2px solid var(--COLOR-BLACK);
     bottom: 0;
     left: 0;
