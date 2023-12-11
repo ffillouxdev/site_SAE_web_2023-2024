@@ -429,7 +429,7 @@ ul {
         display: none;
     }
 
-   .navbar-ordinateur {
+    .navbar-ordinateur {
         display: block;
     }
 
@@ -1034,7 +1034,7 @@ ul {
 
 /* || FORMAT MOBILE DU MAIN || */
 @media screen and (max-width: 490px) {
-   .navbar-ordinateur {
+    .navbar-ordinateur {
         display: none;
     }
 
@@ -1382,7 +1382,7 @@ ul {
 
     .intro__img-mission img {
         width: 80vw;
-        margin-right: 8%;
+        margin-left: 8%;
     }
 
     .possibilities hr {
@@ -1817,7 +1817,7 @@ ul {
         flex-direction: column-reverse;
     }
 
-    .possibilities__tier{
+    .possibilities__tier {
         flex-direction: column;
     }
 
