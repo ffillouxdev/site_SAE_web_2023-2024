@@ -308,7 +308,7 @@ ul {
 }
 
 /* Additional header Bar */
-.ads-header {
+.ads {
     background-color: var(--PRIMARY_COLOR);
     height: 42px;
     text-align: center;
@@ -316,32 +316,32 @@ ul {
     justify-content: space-between;
 }
 
-.ads-header p {
+.ads p {
     color: white;
     padding-top: 1.2%;
     width: 100%;
     margin-left: 5%;
 }
 
-.ads-header a {
+.ads a {
     padding-top: 1.2%;
     width: 99%;
 }
 
-.ads-header i {
+.ads i {
     font-size: 25px;
     color: var(--COLOR-WHITE);
     margin-top: 12px;
     margin-right: 15px;
 }
 
-.ads-header i:hover {
+.ads i:hover {
     color: var(--COLOR-BLACK);
     cursor: pointer;
 }
 
 /* Styles par défaut pour le bouton */
-.toggle-ads-header {
+.toggle-ads {
     display: none;
     background-color: var(--PRIMARY_COLOR);
     border: none;
@@ -349,8 +349,8 @@ ul {
     height: 24px;
 }
 
-/* Styles pour la div .ads-header quand le bouton est coché */
-.toggle-ads-header:checked+.ads-header {
+/* Styles pour la div .ads quand le bouton est coché */
+.toggle-ads:checked+.ads {
     display: none;
 }
 
