@@ -1153,6 +1153,8 @@ ul {
     .propositions__trottinette img {
         width: 120px;
         height: 120px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
 
     .propositions__trottinette img:hover {
@@ -1165,6 +1167,8 @@ ul {
     .propositions__segway img {
         width: 120px;
         height: 120px;
+        margin-top: 10px;
+        margin-left: 15px;
     }
 
     .propositions__segway img:hover {
