@@ -1140,7 +1140,6 @@ ul {
     .propositions__velo img {
         width: 155px;
         height: 115px;
-        margin: 10px;
     }
 
     .propositions__velo img:hover {
@@ -1154,13 +1153,11 @@ ul {
     .propositions__trottinette img {
         width: 120px;
         height: 120px;
-        margin: 10px;
     }
 
     .propositions__trottinette img:hover {
         width: 120px;
         height: 120px;
-        margin: 10px;
         transform: scale(1.1);
         transition: 0.5s;
     }
@@ -1168,7 +1165,6 @@ ul {
     .propositions__segway img {
         width: 120px;
         height: 120px;
-        margin-top: 10px;
     }
 
     .propositions__segway img:hover {
@@ -1376,7 +1372,7 @@ ul {
         color: var(--COLOR-WHITE);
     }
 
-    .intro__img-mission {
+    .intro__img-mission {   
         width: 100vw;
     }
 
