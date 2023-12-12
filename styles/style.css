@@ -698,9 +698,12 @@ ul {
         animation: slideRightToLeft 1s ease-in-out;
     }
 
-    .intro .intro__flex-container .intro__right-container p {
-        margin-top: 5%;
+    .intro .intro__flex-container .intro__right-container p{
         width: 75%;
+    }
+
+    .intro .intro__flex-container .intro__right-container p:nth-child(2), .intro .intro__flex-container .intro__right-container p:nth-child(3) {
+        margin-top: 6%;
     }
 
     .intro .intro__flex-container .intro__right-container button {
