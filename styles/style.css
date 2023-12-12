@@ -1076,7 +1076,10 @@ ul {
 
     #checknav {
         display: none;
-        margin-bottom: 5%;
+    }
+
+    .material-symbols-outlined {
+        margin-top: 2%;
     }
 
     #checknav:checked~.header-center-bottom {
