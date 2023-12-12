@@ -308,7 +308,7 @@ ul {
 }
 
 /* Additional header Bar */
-.ads-header {
+.ads_header {
     background-color: var(--PRIMARY_COLOR);
     height: 42px;
     text-align: center;
@@ -316,14 +316,14 @@ ul {
     justify-content: space-between;
 }
 
-.ads-header p {
+.ads_header p {
     color: var(--COLOR-WHITE);
     padding-top: 1.2%;
     width: 100%;
     margin-left: 3%;
 }
 
-.ads-header a {
+.ads_header a {
     padding-top: 1.2%;
     width: 99%;
 }
