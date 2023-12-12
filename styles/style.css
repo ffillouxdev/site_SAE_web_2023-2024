@@ -317,41 +317,15 @@ ul {
 }
 
 .ads-header p {
-    color: white;
+    color: var(--COLOR-WHITE);
     padding-top: 1.2%;
     width: 100%;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .ads-header a {
     padding-top: 1.2%;
     width: 99%;
-}
-
-.ads-header img {
-    height: 15px;
-    color: var(--COLOR-WHITE);
-    margin-top: 17px;
-    margin-right: 15px;
-}
-
-.ads-header img:hover {
-    color: var(--COLOR-BLACK);
-    cursor: pointer;
-}
-
-/* Styles par défaut pour le bouton */
-.toggle-ads-header {
-    display: none;
-    background-color: var(--PRIMARY_COLOR);
-    border: none;
-    width: 24px;
-    height: 24px;
-}
-
-/* Styles pour la div .ads-header quand le bouton est coché */
-.toggle-ads-header:checked+.ads-header {
-    display: none;
 }
 
 .header hr {
