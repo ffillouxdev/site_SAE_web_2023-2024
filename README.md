@@ -4,9 +4,9 @@ Bienvenue sur DouceMob', le site dédié aux transports doux. Notre mission est 
 
 ### **Front-End**
 
-*HTML* : La structure de nos pages est assurée par une sémantique claire et une accessibilité maximale utilisant HTML.
+*HTML* : La structure de nos pages est assurée par une sémantique claire et une accessibilité maximale utilisant HTML et la méthodologie BEM.
 
-*CSS* : Les styles sont appliqués à nos pages avec css, garantissant un design attrayant et une expérience utilisateur cohérente.
+*CSS* : Les styles sont appliqués à nos pages avec CSS en suivant la méthodologie BEM (Blocs- Elements - Modifiers) qui nous a permis des créer de variables dans root, simplifiant la compréhension des utilisations des couleurs et recense les occurrences, garantissant une compréhension des autres developpers compréhensibles, un design attrayant et une expérience utilisatrice cohérente.
 
 #### Références couleurs
 | Couleurs   | HEX      |
