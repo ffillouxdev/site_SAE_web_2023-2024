@@ -1041,6 +1041,7 @@ ul {
     .formulaire .blue-box p {
         margin-left: 5%;
         margin-right: 10%;
+        font-size: calc(0.5em + 0.5vw);
     }
 }
 
@@ -1943,6 +1944,7 @@ ul {
 
     .formulaire textarea {
         width: 90%;
+        height: 200px;
     }
 
     .formulaire .blue-box {
