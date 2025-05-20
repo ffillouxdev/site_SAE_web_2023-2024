@@ -2,6 +2,8 @@
 
 Bienvenue sur DouceMob', le site dédié aux transports doux. Notre mission est de faciliter l'accès à l'information sur les moyens de transport respectueux de l'environnement. Que vous soyez étudiant, actif, ou simplement à la recherche de solutions de déplacement écologiques, DouceMob' est là pour vous.
 
+![logo](assets/logdm.webp)
+
 ### **Front-End**
 
 *HTML* : La structure de nos pages est assurée par une sémantique claire et une accessibilité maximale utilisant HTML et la méthodologie BEM.
